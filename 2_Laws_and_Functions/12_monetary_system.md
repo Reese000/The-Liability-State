@@ -78,6 +78,46 @@ The Liability State has no central bank because it doesn't need one:
 | **Currency issuance** | The currency supply is determined by the Land Value Index mechanically. No discretion. |
 | **Inflation targeting** | The peg to the LVI is the inflation target. If land values rise 3% in a year, the currency's real value rises ~3% (mild deflation). If land values fall, the currency depreciates (mild inflation). |
 
+### Worked Example: How the Fiscal Anchor Enforces the Peg
+
+This demonstrates how the peg is self-enforcing without convertibility.
+
+**Starting State:**
+- Total LVT-assessed asset value: $100T (trillion)
+- Currency in circulation: 100B units
+- LVI = $100T / 100B = $1,000 per unit (the definitional peg)
+- Aggregate LVT revenue at 3% rate: $3T/year
+- Aggregate Citizen's Dividend: $3T/year
+
+**Scenario A — Land values rise 10% (economic growth):**
+1. LVT assessments revalue to $110T
+2. LVT revenue rises to $3.3T/year (3% × $110T)
+3. Currency supply is unchanged at 100B units
+4. LVI = $110T / 100B = $1,100 per unit (10% appreciation)
+5. Dividend rises to $3.3T/year → citizens receive more currency
+6. The higher Dividend injects purchasing power, offsetting the deflationary pressure of the appreciating currency
+7. **Equilibrium restored**: citizens have more currency to spend, economic activity at the new price level is supported
+
+**Scenario B — Land values fall 20% (recession):**
+1. LVT assessments revalue to $80T
+2. LVT revenue falls to $2.4T/year
+3. Currency supply is unchanged at 100B units
+4. LVI = $80T / 100B = $800 per unit (20% depreciation — mild inflation in goods)
+5. Dividend falls to $2.4T/year → citizens receive less currency
+6. The lower Dividend reduces aggregate demand, which is contractionary but prevents over-stimulus
+7. The currency depreciation makes LS exports cheaper, supporting recovery
+
+**Scenario C — Government attempts to spend beyond LVT revenue:**
+1. Government tries to issue $1T in new currency to fund a project
+2. Currency supply rises to 101B units
+3. LVI drops to $100T / 101B = $990 per unit (~1% depreciation)
+4. The depreciation means every existing dollar buys slightly less land-value backing
+5. Citizens notice their Dividend buys less; courts are petitioned
+6. The constitutional peg provision is violated — the government faces liability for currency dilution
+7. **The peg is enforced by courts, not by a central bank**
+
+The critical insight: the peg is enforced by the **interaction of fiscal obligations (LVT) and constitutional rights (Dividend + defined currency unit)**. No convertibility is needed because the demand for the currency is created by the tax system and the supply is created by the dividend system. They operate on the same unit, creating a natural equilibrium that any deviation from the peg disrupts — and disruption triggers constitutional liability.
+
 ---
 
 ## The Land Value Index (LVI)
@@ -117,7 +157,32 @@ The LVT assessment methodology generates valuations for each asset using the Har
 | **Manipulate the basket composition** | The 60% physical land floor is constitutional. The weight of each component is calculated from trailing 5-year average LVT revenue, not a point-in-time snapshot. |
 | **Collude to move a large parcel's value** | The index is a broad basket across all compacts. Moving it requires coordinated manipulation of thousands of parcels — which the LVT system's transparency requirements make impossible. |
 
----
+### Stress-Testing the 60% Floor
+
+The 60% physical land floor is derived from stress-testing against historical asset volatility. The question is: **under what scenarios does the currency remain fully backed?**
+
+**Methodology**: The floor must survive the worst single-asset-class crash in recorded history while maintaining >90% of nominal backing (below that, courts may authorize a one-time currency adjustment).
+
+| Scenario | Land | Non-land (IP/spectrum/etc.) | Total backing | Currency impact | Survives? |
+|----------|:---:|:---------------------------:|:-------------:|:---------------:|:---------:|
+| **Baseline** | 60 | 40 | 100 | Peg holds | ✅ |
+| **IP/spectrum crash -90%** (2000 dot-com bust) | 60 | 4 | 64 | -36% vs peg — below 90% threshold, triggers court review | ⚠️ Near limit |
+| **Land crash -30%** (Japan 1991-2010) | 42 | 40 | 82 | -18% vs peg — below 90% threshold, triggers court review | ⚠️ Near limit |
+| **Combined: land -30% + IP -50%** (recession) | 42 | 20 | 62 | -38% vs peg — below threshold, triggers court review | ⚠️ Near limit |
+| **Combined: land -20% + IP -90%** (tail event) | 48 | 4 | 52 | -48% vs peg — severe, triggers constitutional review | ❌ |
+| **Worst historically correlated** (2008 GFC: land -25%, IP/spectrum -40%) | 45 | 24 | 69 | -31% — below 90% threshold | ⚠️ Borderline |
+
+**Interpretation:**
+
+| Scenario | Meaning |
+|----------|---------|
+| ✅ Survives | Backing remains ≥90% of nominal. No action needed. |
+| ⚠️ Below 90% threshold | Courts may authorize a one-time currency rebasing (reducing units in circulation proportionally) or a temporary LVT surcharge on the affected asset class to restore backing over 3-5 years. This is not a default — it's a managed adjustment. |
+| ❌ Breaks floor | Requires constitutional intervention (75% supermajority to amend the peg). Such a scenario (simultaneous -20% land + -90% IP/spectrum) has no historical precedent. |
+
+**The 60% floor is designed to survive normal market volatility while keeping tail-event adjustments manageable. In the worst single-asset crash in history (Japan land, -30%, 1991-2010), the floor retains 82% residual backing — below the 90% automatic threshold but well within the range of a court-ordered rebasing or temporary LVT surcharge. In the 2008 GFC scenario (land -25%, IP/spectrum -40%), it retains 69% backing.**
+
+A 50% floor would also see reduced backing under Japan crash (land component: 35, non-land: 50, total: 85). A 75% floor would be unnecessarily restrictive (less diversification benefit from non-land assets) and would perform worse in an IP/spectrum crash (75 + 10 = 85). The 60% figure optimizes the tradeoff between land stability and diversification against both real-estate and technology sector crashes.
 
 ## Currency Supply Dynamics
 

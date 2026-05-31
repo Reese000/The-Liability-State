@@ -246,7 +246,23 @@ The Liability State's relationship with foreign nations is governed by a differe
 | **Autarkic, closed nation** | ⚠️ Vulnerable, but their own citizens can leave at any time | Pressure is on the regime to open borders, not on the LS to build an army. |
 | **Prison state (forcibly prevents emigration)** | ❌ Vulnerable | The bar is: "their people had the option to walk away and chose to be locked in." |
 
-**The meta-effect**: The LS's existence becomes a peaceful expansion engine. The LS is attractive (high dividend, functioning courts, priced risk). Neighboring nations' citizens can freely migrate to the LS, which drains talent and capital from closed nations. Those nations face pressure to open their borders to retain their people. Once borders open, trade follows, and conquest becomes unprofitable. The LS never needs to fire a shot.
+#### Independent Verification (Supreme Trust Oracle)
+
+Determining whether a foreign nation genuinely allows free emigration is not left to the invading compact's discretion. **The Supreme Trust Oracle** (see [Political Structure §Supreme Trust Oracle](./06_political_structure.md#supreme-trust-ora)) is the designated arbiter:
+
+1. A compact proposing a conquest must petition the STO for a **Freedom of Exit Determination**
+2. The STO reviews evidence from all available sources: published laws, border practices, traveler accounts, third-party human rights assessments, and any testimony the target government chooses to submit
+3. The target government may participate in the proceedings and present evidence that it allows free emigration
+4. The STO issues a public ruling: **Open, Restricted, or Closed** emigration status
+5. **Open** → Conquest is constitutionally prohibited. The compact may not proceed.
+6. **Restricted** → The compact must wait 2 years and petition again. If conditions do not improve, the STO may authorize conquest.
+7. **Closed** → Conquest is constitutionally permitted. The compact may proceed with the remaining requirements (insurance, full citizenship, civilian protection).
+
+**Why the STO and not a private court**: The Freedom of Exit Determination is not a liability dispute between private parties — it is a constitutional question about the legality of armed action. The STO's existing jurisdiction over inter-compact disputes and its role as the constitutional backstop make it the natural arbiter. Its rulings are enforced through the Trust Blockade (if a compact proceeds with conquest against an STO ruling of "Open," the compact is economically quarantined).
+
+This mechanism ensures that the peaceful accession principle is not self-judging. A compact cannot simply declare its target a "prison state" and proceed. The STO's evidentiary process provides independent verification, and the target government has standing to participate.
+
+**The meta-effect**:
 
 ### The Legal Distinction: Compacts vs. Foreign Nations
 
