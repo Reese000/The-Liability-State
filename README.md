@@ -115,8 +115,8 @@ Forward-looking concepts and open questions:
 - [09_social_services.md](./2_Laws_and_Functions/09_social_services.md) — Welfare, child protection, post-scarcity
 |- [10_taxation.md](./2_Laws_and_Functions/10_taxation.md) — LVT, inheritance, feebates, Option Premium
 |- [11_immigration.md](./2_Laws_and_Functions/11_immigration.md) — Citizenship bonds, guild sponsorship, border
-|- [12_monetary_system.md](./2_Laws_and_Functions/12_monetary_system.md) — Land-backed currency, Land Value Index, monetary design
 
+|
 ### 3_Implementation/
 - [00_overview.md](./3_Implementation/00_overview.md) — Section overview
 - [01_transition_plan.md](./3_Implementation/01_transition_plan.md) — Regency period

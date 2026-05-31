@@ -99,13 +99,11 @@ The twenty-first century saw the emergence of surveillance capitalism, where com
 | Glass Box Mandate | High | Not drafted |
 | Free Movement of Citizens and Capital | High | Not drafted |
 | Actuarial Model Transparency | High | Not drafted |
-| Land-Backed Currency Definition | High | Not drafted |
 | Three-Source Mandate | High | Not drafted |
 | Harberger Property Rights | Medium | Not drafted |
 | No Ex-Ante Licensing (General Presumption) | Medium | Not drafted |
 | Prohibition on Income Tax | Medium | Not drafted |
 | Compact Formation and Dissolution | Medium | Not drafted |
-| Peaceful Accession Principle | Medium | Not drafted |
 | Glass Box Personal Mandate (Knowledge Boundary) | High | Drafted |
 
 ---

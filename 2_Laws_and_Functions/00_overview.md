@@ -54,7 +54,6 @@ This section documents the complete operational mechanics of how the system func
 | [09 Social Services](./09_social_services.md) | Welfare, education, child protection bounty, post-scarcity |
 | [10 Taxation](./10_taxation.md) | LVT, inheritance, feebates, Option Premium |
 | [11 Immigration](./11_immigration.md) | Citizenship bonds, guild sponsorship, border |
-| [12 Monetary System](./12_monetary_system.md) | Land-backed currency, Land Value Index, monetary design |
 
 ---
 
