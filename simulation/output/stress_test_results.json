@@ -1,0 +1,1190 @@
+[
+  {
+    "system": "Dual_Compact_LS",
+    "stress": "STRESS_CORRUPT",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1874,
+    "wealth": 507077738.3557818,
+    "error": ""
+  },
+  {
+    "system": "Dual_Compact_LS",
+    "stress": "STRESS_CORRUPT",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1893,
+    "wealth": 507807178.45016116,
+    "error": ""
+  },
+  {
+    "system": "Dual_Compact_LS",
+    "stress": "STRESS_CORRUPT",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.19,
+    "wealth": 507450799.8932768,
+    "error": ""
+  },
+  {
+    "system": "Harberger_Georgist",
+    "stress": "STRESS_CORRUPT",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1943,
+    "wealth": 507077738.35577,
+    "error": ""
+  },
+  {
+    "system": "Harberger_Georgist",
+    "stress": "STRESS_CORRUPT",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.2108,
+    "wealth": 507807178.450157,
+    "error": ""
+  },
+  {
+    "system": "Harberger_Georgist",
+    "stress": "STRESS_CORRUPT",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.2012,
+    "wealth": 507450799.8932761,
+    "error": ""
+  },
+  {
+    "system": "LS_Full",
+    "stress": "STRESS_CORRUPT",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1874,
+    "wealth": 507077738.3557818,
+    "error": ""
+  },
+  {
+    "system": "LS_Full",
+    "stress": "STRESS_CORRUPT",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1893,
+    "wealth": 507807178.45016116,
+    "error": ""
+  },
+  {
+    "system": "LS_Full",
+    "stress": "STRESS_CORRUPT",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.19,
+    "wealth": 507450799.8932768,
+    "error": ""
+  },
+  {
+    "system": "Laissez_Faire",
+    "stress": "STRESS_CORRUPT",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.097,
+    "wealth": 507077738.355781,
+    "error": ""
+  },
+  {
+    "system": "Laissez_Faire",
+    "stress": "STRESS_CORRUPT",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1003,
+    "wealth": 507807178.4501752,
+    "error": ""
+  },
+  {
+    "system": "Laissez_Faire",
+    "stress": "STRESS_CORRUPT",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.0881,
+    "wealth": 507450799.8932879,
+    "error": ""
+  },
+  {
+    "system": "Mutualist_LS",
+    "stress": "STRESS_CORRUPT",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1892,
+    "wealth": 507077738.3557817,
+    "error": ""
+  },
+  {
+    "system": "Mutualist_LS",
+    "stress": "STRESS_CORRUPT",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1993,
+    "wealth": 507807178.4501711,
+    "error": ""
+  },
+  {
+    "system": "Mutualist_LS",
+    "stress": "STRESS_CORRUPT",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.2059,
+    "wealth": 507450799.89328355,
+    "error": ""
+  },
+  {
+    "system": "Nordic",
+    "stress": "STRESS_CORRUPT",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1215,
+    "wealth": 507077738.3557688,
+    "error": ""
+  },
+  {
+    "system": "Nordic",
+    "stress": "STRESS_CORRUPT",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1193,
+    "wealth": 507807178.4501808,
+    "error": ""
+  },
+  {
+    "system": "Nordic",
+    "stress": "STRESS_CORRUPT",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1197,
+    "wealth": 507450799.8932664,
+    "error": ""
+  },
+  {
+    "system": "Pure_Georgist",
+    "stress": "STRESS_CORRUPT",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1943,
+    "wealth": 507077738.35577,
+    "error": ""
+  },
+  {
+    "system": "Pure_Georgist",
+    "stress": "STRESS_CORRUPT",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.2108,
+    "wealth": 507807178.450157,
+    "error": ""
+  },
+  {
+    "system": "Pure_Georgist",
+    "stress": "STRESS_CORRUPT",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.2012,
+    "wealth": 507450799.8932761,
+    "error": ""
+  },
+  {
+    "system": "Singapore",
+    "stress": "STRESS_CORRUPT",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.0867,
+    "wealth": 507077738.3557684,
+    "error": ""
+  },
+  {
+    "system": "Singapore",
+    "stress": "STRESS_CORRUPT",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.0886,
+    "wealth": 507807178.4501788,
+    "error": ""
+  },
+  {
+    "system": "Singapore",
+    "stress": "STRESS_CORRUPT",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.0866,
+    "wealth": 507450799.893267,
+    "error": ""
+  },
+  {
+    "system": "UBI_VAT",
+    "stress": "STRESS_CORRUPT",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1331,
+    "wealth": 507077738.3557778,
+    "error": ""
+  },
+  {
+    "system": "UBI_VAT",
+    "stress": "STRESS_CORRUPT",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1318,
+    "wealth": 507807178.45017767,
+    "error": ""
+  },
+  {
+    "system": "UBI_VAT",
+    "stress": "STRESS_CORRUPT",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.132,
+    "wealth": 507450799.893271,
+    "error": ""
+  },
+  {
+    "system": "US_Style",
+    "stress": "STRESS_CORRUPT",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1239,
+    "wealth": 507077738.35577166,
+    "error": ""
+  },
+  {
+    "system": "US_Style",
+    "stress": "STRESS_CORRUPT",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1186,
+    "wealth": 507807178.4501767,
+    "error": ""
+  },
+  {
+    "system": "US_Style",
+    "stress": "STRESS_CORRUPT",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1176,
+    "wealth": 507450799.8932887,
+    "error": ""
+  },
+  {
+    "system": "Worker_Coop",
+    "stress": "STRESS_CORRUPT",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1763,
+    "wealth": 507077738.3557817,
+    "error": ""
+  },
+  {
+    "system": "Worker_Coop",
+    "stress": "STRESS_CORRUPT",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1887,
+    "wealth": 507807178.4501715,
+    "error": ""
+  },
+  {
+    "system": "Worker_Coop",
+    "stress": "STRESS_CORRUPT",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.199,
+    "wealth": 507450799.8932728,
+    "error": ""
+  },
+  {
+    "system": "Dual_Compact_LS",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1869,
+    "wealth": 507077738.35577804,
+    "error": ""
+  },
+  {
+    "system": "Dual_Compact_LS",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1854,
+    "wealth": 507807178.45016235,
+    "error": ""
+  },
+  {
+    "system": "Dual_Compact_LS",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1936,
+    "wealth": 507450799.8932826,
+    "error": ""
+  },
+  {
+    "system": "Harberger_Georgist",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1943,
+    "wealth": 507077738.3557708,
+    "error": ""
+  },
+  {
+    "system": "Harberger_Georgist",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.216,
+    "wealth": 507807178.4501578,
+    "error": ""
+  },
+  {
+    "system": "Harberger_Georgist",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.2008,
+    "wealth": 507450799.893275,
+    "error": ""
+  },
+  {
+    "system": "LS_Full",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1869,
+    "wealth": 507077738.35577804,
+    "error": ""
+  },
+  {
+    "system": "LS_Full",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1854,
+    "wealth": 507807178.45016235,
+    "error": ""
+  },
+  {
+    "system": "LS_Full",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1936,
+    "wealth": 507450799.8932826,
+    "error": ""
+  },
+  {
+    "system": "Laissez_Faire",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.095,
+    "wealth": 507077738.35577786,
+    "error": ""
+  },
+  {
+    "system": "Laissez_Faire",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1005,
+    "wealth": 507807178.4501749,
+    "error": ""
+  },
+  {
+    "system": "Laissez_Faire",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.0864,
+    "wealth": 507450799.89328736,
+    "error": ""
+  },
+  {
+    "system": "Mutualist_LS",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1738,
+    "wealth": 507077738.3557798,
+    "error": ""
+  },
+  {
+    "system": "Mutualist_LS",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.207,
+    "wealth": 507807178.4501746,
+    "error": ""
+  },
+  {
+    "system": "Mutualist_LS",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.2011,
+    "wealth": 507450799.89328545,
+    "error": ""
+  },
+  {
+    "system": "Nordic",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1124,
+    "wealth": 507077738.35577935,
+    "error": ""
+  },
+  {
+    "system": "Nordic",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1108,
+    "wealth": 507807178.4501733,
+    "error": ""
+  },
+  {
+    "system": "Nordic",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1165,
+    "wealth": 507450799.89327186,
+    "error": ""
+  },
+  {
+    "system": "Pure_Georgist",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1943,
+    "wealth": 507077738.3557708,
+    "error": ""
+  },
+  {
+    "system": "Pure_Georgist",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.216,
+    "wealth": 507807178.4501578,
+    "error": ""
+  },
+  {
+    "system": "Pure_Georgist",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.2008,
+    "wealth": 507450799.893275,
+    "error": ""
+  },
+  {
+    "system": "Singapore",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.0876,
+    "wealth": 507077738.3557615,
+    "error": ""
+  },
+  {
+    "system": "Singapore",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.0852,
+    "wealth": 507807178.45017326,
+    "error": ""
+  },
+  {
+    "system": "Singapore",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.081,
+    "wealth": 507450799.89329433,
+    "error": ""
+  },
+  {
+    "system": "UBI_VAT",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1338,
+    "wealth": 507077738.3557717,
+    "error": ""
+  },
+  {
+    "system": "UBI_VAT",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1287,
+    "wealth": 507807178.450177,
+    "error": ""
+  },
+  {
+    "system": "UBI_VAT",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1302,
+    "wealth": 507450799.89327425,
+    "error": ""
+  },
+  {
+    "system": "US_Style",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1247,
+    "wealth": 507077738.3557767,
+    "error": ""
+  },
+  {
+    "system": "US_Style",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1152,
+    "wealth": 507807178.45017004,
+    "error": ""
+  },
+  {
+    "system": "US_Style",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1149,
+    "wealth": 507450799.8932755,
+    "error": ""
+  },
+  {
+    "system": "Worker_Coop",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1735,
+    "wealth": 507077738.35577804,
+    "error": ""
+  },
+  {
+    "system": "Worker_Coop",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.193,
+    "wealth": 507807178.4501657,
+    "error": ""
+  },
+  {
+    "system": "Worker_Coop",
+    "stress": "STRESS_MONOPOLY",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1938,
+    "wealth": 507450799.89327496,
+    "error": ""
+  },
+  {
+    "system": "Dual_Compact_LS",
+    "stress": "STRESS_BANKING",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1869,
+    "wealth": 507077738.35577804,
+    "error": ""
+  },
+  {
+    "system": "Dual_Compact_LS",
+    "stress": "STRESS_BANKING",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1854,
+    "wealth": 507807178.45016235,
+    "error": ""
+  },
+  {
+    "system": "Dual_Compact_LS",
+    "stress": "STRESS_BANKING",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1936,
+    "wealth": 507450799.8932826,
+    "error": ""
+  },
+  {
+    "system": "Harberger_Georgist",
+    "stress": "STRESS_BANKING",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1943,
+    "wealth": 507077738.3557708,
+    "error": ""
+  },
+  {
+    "system": "Harberger_Georgist",
+    "stress": "STRESS_BANKING",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.216,
+    "wealth": 507807178.4501578,
+    "error": ""
+  },
+  {
+    "system": "Harberger_Georgist",
+    "stress": "STRESS_BANKING",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.2008,
+    "wealth": 507450799.893275,
+    "error": ""
+  },
+  {
+    "system": "LS_Full",
+    "stress": "STRESS_BANKING",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1869,
+    "wealth": 507077738.35577804,
+    "error": ""
+  },
+  {
+    "system": "LS_Full",
+    "stress": "STRESS_BANKING",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1854,
+    "wealth": 507807178.45016235,
+    "error": ""
+  },
+  {
+    "system": "LS_Full",
+    "stress": "STRESS_BANKING",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1936,
+    "wealth": 507450799.8932826,
+    "error": ""
+  },
+  {
+    "system": "Laissez_Faire",
+    "stress": "STRESS_BANKING",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.095,
+    "wealth": 507077738.35577786,
+    "error": ""
+  },
+  {
+    "system": "Laissez_Faire",
+    "stress": "STRESS_BANKING",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1005,
+    "wealth": 507807178.4501749,
+    "error": ""
+  },
+  {
+    "system": "Laissez_Faire",
+    "stress": "STRESS_BANKING",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.0864,
+    "wealth": 507450799.89328736,
+    "error": ""
+  },
+  {
+    "system": "Mutualist_LS",
+    "stress": "STRESS_BANKING",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1738,
+    "wealth": 507077738.3557798,
+    "error": ""
+  },
+  {
+    "system": "Mutualist_LS",
+    "stress": "STRESS_BANKING",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.207,
+    "wealth": 507807178.4501746,
+    "error": ""
+  },
+  {
+    "system": "Mutualist_LS",
+    "stress": "STRESS_BANKING",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.2011,
+    "wealth": 507450799.89328545,
+    "error": ""
+  },
+  {
+    "system": "Nordic",
+    "stress": "STRESS_BANKING",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1124,
+    "wealth": 507077738.35577935,
+    "error": ""
+  },
+  {
+    "system": "Nordic",
+    "stress": "STRESS_BANKING",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1108,
+    "wealth": 507807178.4501733,
+    "error": ""
+  },
+  {
+    "system": "Nordic",
+    "stress": "STRESS_BANKING",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1165,
+    "wealth": 507450799.89327186,
+    "error": ""
+  },
+  {
+    "system": "Pure_Georgist",
+    "stress": "STRESS_BANKING",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1943,
+    "wealth": 507077738.3557708,
+    "error": ""
+  },
+  {
+    "system": "Pure_Georgist",
+    "stress": "STRESS_BANKING",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.216,
+    "wealth": 507807178.4501578,
+    "error": ""
+  },
+  {
+    "system": "Pure_Georgist",
+    "stress": "STRESS_BANKING",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.2008,
+    "wealth": 507450799.893275,
+    "error": ""
+  },
+  {
+    "system": "Singapore",
+    "stress": "STRESS_BANKING",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.0876,
+    "wealth": 507077738.3557615,
+    "error": ""
+  },
+  {
+    "system": "Singapore",
+    "stress": "STRESS_BANKING",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.0852,
+    "wealth": 507807178.45017326,
+    "error": ""
+  },
+  {
+    "system": "Singapore",
+    "stress": "STRESS_BANKING",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.081,
+    "wealth": 507450799.89329433,
+    "error": ""
+  },
+  {
+    "system": "UBI_VAT",
+    "stress": "STRESS_BANKING",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1338,
+    "wealth": 507077738.3557717,
+    "error": ""
+  },
+  {
+    "system": "UBI_VAT",
+    "stress": "STRESS_BANKING",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1287,
+    "wealth": 507807178.450177,
+    "error": ""
+  },
+  {
+    "system": "UBI_VAT",
+    "stress": "STRESS_BANKING",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1302,
+    "wealth": 507450799.89327425,
+    "error": ""
+  },
+  {
+    "system": "US_Style",
+    "stress": "STRESS_BANKING",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1247,
+    "wealth": 507077738.3557767,
+    "error": ""
+  },
+  {
+    "system": "US_Style",
+    "stress": "STRESS_BANKING",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1152,
+    "wealth": 507807178.45017004,
+    "error": ""
+  },
+  {
+    "system": "US_Style",
+    "stress": "STRESS_BANKING",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1149,
+    "wealth": 507450799.8932755,
+    "error": ""
+  },
+  {
+    "system": "Worker_Coop",
+    "stress": "STRESS_BANKING",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1735,
+    "wealth": 507077738.35577804,
+    "error": ""
+  },
+  {
+    "system": "Worker_Coop",
+    "stress": "STRESS_BANKING",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.193,
+    "wealth": 507807178.4501657,
+    "error": ""
+  },
+  {
+    "system": "Worker_Coop",
+    "stress": "STRESS_BANKING",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1938,
+    "wealth": 507450799.89327496,
+    "error": ""
+  },
+  {
+    "system": "Dual_Compact_LS",
+    "stress": "STRESS_COMBO",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1874,
+    "wealth": 507077738.3557818,
+    "error": ""
+  },
+  {
+    "system": "Dual_Compact_LS",
+    "stress": "STRESS_COMBO",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1893,
+    "wealth": 507807178.45016116,
+    "error": ""
+  },
+  {
+    "system": "Dual_Compact_LS",
+    "stress": "STRESS_COMBO",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.19,
+    "wealth": 507450799.8932768,
+    "error": ""
+  },
+  {
+    "system": "Harberger_Georgist",
+    "stress": "STRESS_COMBO",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1943,
+    "wealth": 507077738.35577,
+    "error": ""
+  },
+  {
+    "system": "Harberger_Georgist",
+    "stress": "STRESS_COMBO",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.2108,
+    "wealth": 507807178.450157,
+    "error": ""
+  },
+  {
+    "system": "Harberger_Georgist",
+    "stress": "STRESS_COMBO",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.2012,
+    "wealth": 507450799.8932761,
+    "error": ""
+  },
+  {
+    "system": "LS_Full",
+    "stress": "STRESS_COMBO",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1874,
+    "wealth": 507077738.3557818,
+    "error": ""
+  },
+  {
+    "system": "LS_Full",
+    "stress": "STRESS_COMBO",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1893,
+    "wealth": 507807178.45016116,
+    "error": ""
+  },
+  {
+    "system": "LS_Full",
+    "stress": "STRESS_COMBO",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.19,
+    "wealth": 507450799.8932768,
+    "error": ""
+  },
+  {
+    "system": "Laissez_Faire",
+    "stress": "STRESS_COMBO",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.097,
+    "wealth": 507077738.355781,
+    "error": ""
+  },
+  {
+    "system": "Laissez_Faire",
+    "stress": "STRESS_COMBO",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1003,
+    "wealth": 507807178.4501752,
+    "error": ""
+  },
+  {
+    "system": "Laissez_Faire",
+    "stress": "STRESS_COMBO",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.0881,
+    "wealth": 507450799.8932879,
+    "error": ""
+  },
+  {
+    "system": "Mutualist_LS",
+    "stress": "STRESS_COMBO",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1892,
+    "wealth": 507077738.3557817,
+    "error": ""
+  },
+  {
+    "system": "Mutualist_LS",
+    "stress": "STRESS_COMBO",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1993,
+    "wealth": 507807178.4501711,
+    "error": ""
+  },
+  {
+    "system": "Mutualist_LS",
+    "stress": "STRESS_COMBO",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.2059,
+    "wealth": 507450799.89328355,
+    "error": ""
+  },
+  {
+    "system": "Nordic",
+    "stress": "STRESS_COMBO",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1215,
+    "wealth": 507077738.3557688,
+    "error": ""
+  },
+  {
+    "system": "Nordic",
+    "stress": "STRESS_COMBO",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1193,
+    "wealth": 507807178.4501808,
+    "error": ""
+  },
+  {
+    "system": "Nordic",
+    "stress": "STRESS_COMBO",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1197,
+    "wealth": 507450799.8932664,
+    "error": ""
+  },
+  {
+    "system": "Pure_Georgist",
+    "stress": "STRESS_COMBO",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1943,
+    "wealth": 507077738.35577,
+    "error": ""
+  },
+  {
+    "system": "Pure_Georgist",
+    "stress": "STRESS_COMBO",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.2108,
+    "wealth": 507807178.450157,
+    "error": ""
+  },
+  {
+    "system": "Pure_Georgist",
+    "stress": "STRESS_COMBO",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.2012,
+    "wealth": 507450799.8932761,
+    "error": ""
+  },
+  {
+    "system": "Singapore",
+    "stress": "STRESS_COMBO",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.0867,
+    "wealth": 507077738.3557684,
+    "error": ""
+  },
+  {
+    "system": "Singapore",
+    "stress": "STRESS_COMBO",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.0886,
+    "wealth": 507807178.4501788,
+    "error": ""
+  },
+  {
+    "system": "Singapore",
+    "stress": "STRESS_COMBO",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.0866,
+    "wealth": 507450799.893267,
+    "error": ""
+  },
+  {
+    "system": "UBI_VAT",
+    "stress": "STRESS_COMBO",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1331,
+    "wealth": 507077738.3557778,
+    "error": ""
+  },
+  {
+    "system": "UBI_VAT",
+    "stress": "STRESS_COMBO",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1318,
+    "wealth": 507807178.45017767,
+    "error": ""
+  },
+  {
+    "system": "UBI_VAT",
+    "stress": "STRESS_COMBO",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.132,
+    "wealth": 507450799.893271,
+    "error": ""
+  },
+  {
+    "system": "US_Style",
+    "stress": "STRESS_COMBO",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1239,
+    "wealth": 507077738.35577166,
+    "error": ""
+  },
+  {
+    "system": "US_Style",
+    "stress": "STRESS_COMBO",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1186,
+    "wealth": 507807178.4501767,
+    "error": ""
+  },
+  {
+    "system": "US_Style",
+    "stress": "STRESS_COMBO",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.1176,
+    "wealth": 507450799.8932887,
+    "error": ""
+  },
+  {
+    "system": "Worker_Coop",
+    "stress": "STRESS_COMBO",
+    "seed": 42,
+    "status": "OK",
+    "gini": 0.1763,
+    "wealth": 507077738.3557817,
+    "error": ""
+  },
+  {
+    "system": "Worker_Coop",
+    "stress": "STRESS_COMBO",
+    "seed": 43,
+    "status": "OK",
+    "gini": 0.1887,
+    "wealth": 507807178.4501715,
+    "error": ""
+  },
+  {
+    "system": "Worker_Coop",
+    "stress": "STRESS_COMBO",
+    "seed": 44,
+    "status": "OK",
+    "gini": 0.199,
+    "wealth": 507450799.8932728,
+    "error": ""
+  }
+]

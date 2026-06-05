@@ -235,7 +235,6 @@ The Liability State's relationship with foreign nations is governed by a differe
 > 1. *The operation is insured and actuarially priced by a private insurer*
 > 2. *All inhabitants receive full citizenship and the LVT-based Citizen's Dividend from the date of occupation*
 > 3. *All harm to non-combatants is compensated under strict liability*
-> 4. *The territory's assets are phased into the Land Value Index over 10 years (per monetary system rules — see [Monetary System §Territorial Expansion](../2_Laws_and_Functions/12_monetary_system.md#territorial-expansion-and-the-currency))*
 
 **How it works in practice:**
 
@@ -321,7 +320,6 @@ When a PMC operator kills an enemy soldier during a lawful external operation, *
 | **Insurance cost** | The premium for an invasion is enormous. Civilian casualty risk alone makes most potential targets uninsurable. |
 | **Personal liability for PMC operators** | Every shell, every bomb, every school hit is a personal liability event for the operators. No corporate veil. |
 | **Full citizenship requirement** | The conquered become full citizens with full Dividend rights. Conquering a poor territory means adding net fiscal liabilities (Dividend > LVT revenue) for years. |
-| **10-year LVI phase-in** | New territory's asset value phases into the currency backing over a decade. No overnight currency windfall for conquerors. |
 | **Trade is more profitable** | Trade with an open-borders nation is always more profitable than invading it. The LS only targets nations that refuse to trade AND refuse to let their citizens leave — a vanishingly small set. |
 | **Reputation among compacts** | A compact that invades foreign nations signals willingness to use force for economic gain. This erodes trust and raises insurance costs across all their activities. |
 

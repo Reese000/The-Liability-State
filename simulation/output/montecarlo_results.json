@@ -1,0 +1,710 @@
+{
+  "metadata": {
+    "n_samples": 50,
+    "seed": 42,
+    "steps": 120,
+    "n_params_varied": 25,
+    "varying_params": [
+      "lvt_rate",
+      "income_tax_rate",
+      "corp_tax_rate",
+      "welfare_rate",
+      "union_premium",
+      "cpf_rate",
+      "wage_ratio_cap",
+      "vat_rate",
+      "corruption_level",
+      "income_effect_labor",
+      "admin_overhead",
+      "economies_of_scale",
+      "monopoly_markup_max",
+      "banking_multiplier",
+      "interest_rate",
+      "inheritance_rate",
+      "enforcement_quality",
+      "detection_probability_base",
+      "information_asymmetry",
+      "harberger_buyer_frequency",
+      "harberger_learning_rate",
+      "agricultural_lvt_rate",
+      "minimum_wage",
+      "constitutional_amendment_rate",
+      "bank_initial_reserve"
+    ],
+    "elapsed_seconds": 4.5
+  },
+  "systems": {
+    "LS_Full": {
+      "wealth": {
+        "mean": 507568627.5184,
+        "ci_95_low": 507568627.5184,
+        "ci_95_high": 507568627.5184,
+        "std": 0.0,
+        "n": 50
+      },
+      "gini": {
+        "mean": 0.2552,
+        "ci_95_low": 0.2417,
+        "ci_95_high": 0.2687,
+        "std": 0.0487,
+        "n": 50
+      },
+      "net_worth": {
+        "mean": 43127064.1748,
+        "ci_95_low": 41131683.6891,
+        "ci_95_high": 45122444.6605,
+        "std": 7198709.5534,
+        "n": 50
+      },
+      "wellbeing": {
+        "mean": 0.8846,
+        "ci_95_low": 0.883,
+        "ci_95_high": 0.8862,
+        "std": 0.0058,
+        "n": 50
+      }
+    },
+    "US_Style": {
+      "wealth": {
+        "mean": 507568627.5184,
+        "ci_95_low": 507568627.5184,
+        "ci_95_high": 507568627.5184,
+        "std": 0.0,
+        "n": 50
+      },
+      "gini": {
+        "mean": 0.1233,
+        "ci_95_low": 0.1181,
+        "ci_95_high": 0.1284,
+        "std": 0.0185,
+        "n": 50
+      },
+      "net_worth": {
+        "mean": 40657348.2618,
+        "ci_95_low": 39173029.9162,
+        "ci_95_high": 42141666.6074,
+        "std": 5354956.9776,
+        "n": 50
+      },
+      "wellbeing": {
+        "mean": 0.8716,
+        "ci_95_low": 0.8693,
+        "ci_95_high": 0.874,
+        "std": 0.0085,
+        "n": 50
+      }
+    }
+  },
+  "prob_LS_Full_better": {
+    "wealth": 0.44,
+    "gini": 0.0,
+    "net_worth": 0.58,
+    "wellbeing": 0.86
+  },
+  "samples": {
+    "LS_Full": [
+      {
+        "wealth": 507568627.5183678,
+        "gini": 0.1976,
+        "net_worth": 54785635.81,
+        "wellbeing": 0.8915
+      },
+      {
+        "wealth": 507568627.5183785,
+        "gini": 0.1867,
+        "net_worth": 55123609.55,
+        "wellbeing": 0.892
+      },
+      {
+        "wealth": 507568627.5183754,
+        "gini": 0.2898,
+        "net_worth": 36430501.28,
+        "wellbeing": 0.881
+      },
+      {
+        "wealth": 507568627.5183835,
+        "gini": 0.3106,
+        "net_worth": 38160663.14,
+        "wellbeing": 0.8783
+      },
+      {
+        "wealth": 507568627.5183914,
+        "gini": 0.2407,
+        "net_worth": 40319792.84,
+        "wellbeing": 0.8867
+      },
+      {
+        "wealth": 507568627.51838493,
+        "gini": 0.2444,
+        "net_worth": 33670675.93,
+        "wellbeing": 0.8876
+      },
+      {
+        "wealth": 507568627.51841414,
+        "gini": 0.3553,
+        "net_worth": 34105810.61,
+        "wellbeing": 0.873
+      },
+      {
+        "wealth": 507568627.51838,
+        "gini": 0.2641,
+        "net_worth": 49686237.78,
+        "wellbeing": 0.8821
+      },
+      {
+        "wealth": 507568627.51839185,
+        "gini": 0.1615,
+        "net_worth": 41314446.62,
+        "wellbeing": 0.8966
+      },
+      {
+        "wealth": 507568627.5183968,
+        "gini": 0.2279,
+        "net_worth": 48414433.96,
+        "wellbeing": 0.887
+      },
+      {
+        "wealth": 507568627.5183907,
+        "gini": 0.2926,
+        "net_worth": 39407272.45,
+        "wellbeing": 0.8791
+      },
+      {
+        "wealth": 507568627.51838577,
+        "gini": 0.2623,
+        "net_worth": 42217144.07,
+        "wellbeing": 0.883
+      },
+      {
+        "wealth": 507568627.51836467,
+        "gini": 0.226,
+        "net_worth": 51029908.03,
+        "wellbeing": 0.8868
+      },
+      {
+        "wealth": 507568627.51840377,
+        "gini": 0.2418,
+        "net_worth": 44028951.46,
+        "wellbeing": 0.8869
+      },
+      {
+        "wealth": 507568627.51839024,
+        "gini": 0.1764,
+        "net_worth": 37747544.43,
+        "wellbeing": 0.8946
+      },
+      {
+        "wealth": 507568627.5183824,
+        "gini": 0.2309,
+        "net_worth": 53223599.24,
+        "wellbeing": 0.8863
+      },
+      {
+        "wealth": 507568627.51839364,
+        "gini": 0.3151,
+        "net_worth": 39716428.58,
+        "wellbeing": 0.8774
+      },
+      {
+        "wealth": 507568627.5183819,
+        "gini": 0.253,
+        "net_worth": 40807237.65,
+        "wellbeing": 0.8851
+      },
+      {
+        "wealth": 507568627.5183949,
+        "gini": 0.3251,
+        "net_worth": 36383716.14,
+        "wellbeing": 0.8779
+      },
+      {
+        "wealth": 507568627.5183611,
+        "gini": 0.2274,
+        "net_worth": 53725652.58,
+        "wellbeing": 0.8859
+      },
+      {
+        "wealth": 507568627.5183527,
+        "gini": 0.3144,
+        "net_worth": 38665818.53,
+        "wellbeing": 0.877
+      },
+      {
+        "wealth": 507568627.51839185,
+        "gini": 0.2405,
+        "net_worth": 41150168.93,
+        "wellbeing": 0.8854
+      },
+      {
+        "wealth": 507568627.5183472,
+        "gini": 0.2821,
+        "net_worth": 40008362.92,
+        "wellbeing": 0.8817
+      },
+      {
+        "wealth": 507568627.51837885,
+        "gini": 0.2735,
+        "net_worth": 43845339.66,
+        "wellbeing": 0.881
+      },
+      {
+        "wealth": 507568627.5183949,
+        "gini": 0.2378,
+        "net_worth": 35105280.76,
+        "wellbeing": 0.8878
+      },
+      {
+        "wealth": 507568627.51839584,
+        "gini": 0.2986,
+        "net_worth": 40546705.49,
+        "wellbeing": 0.8797
+      },
+      {
+        "wealth": 507568627.518394,
+        "gini": 0.2322,
+        "net_worth": 56338897.61,
+        "wellbeing": 0.8863
+      },
+      {
+        "wealth": 507568627.518376,
+        "gini": 0.2391,
+        "net_worth": 42663099.75,
+        "wellbeing": 0.8863
+      },
+      {
+        "wealth": 507568627.518372,
+        "gini": 0.2106,
+        "net_worth": 52382364.75,
+        "wellbeing": 0.8884
+      },
+      {
+        "wealth": 507568627.5183791,
+        "gini": 0.2076,
+        "net_worth": 44681384.05,
+        "wellbeing": 0.8915
+      },
+      {
+        "wealth": 507568627.5183888,
+        "gini": 0.3392,
+        "net_worth": 35302173.33,
+        "wellbeing": 0.8745
+      },
+      {
+        "wealth": 507568627.5183808,
+        "gini": 0.2837,
+        "net_worth": 47398464.16,
+        "wellbeing": 0.8805
+      },
+      {
+        "wealth": 507568627.51838535,
+        "gini": 0.3258,
+        "net_worth": 37501400.61,
+        "wellbeing": 0.8761
+      },
+      {
+        "wealth": 507568627.51838416,
+        "gini": 0.3389,
+        "net_worth": 34044741.01,
+        "wellbeing": 0.8753
+      },
+      {
+        "wealth": 507568627.51839936,
+        "gini": 0.2007,
+        "net_worth": 53739200.04,
+        "wellbeing": 0.8914
+      },
+      {
+        "wealth": 507568627.5183533,
+        "gini": 0.3309,
+        "net_worth": 33728555.61,
+        "wellbeing": 0.877
+      },
+      {
+        "wealth": 507568627.5183668,
+        "gini": 0.1822,
+        "net_worth": 32731499.26,
+        "wellbeing": 0.8941
+      },
+      {
+        "wealth": 507568627.51837176,
+        "gini": 0.297,
+        "net_worth": 37600751.69,
+        "wellbeing": 0.8803
+      },
+      {
+        "wealth": 507568627.5184155,
+        "gini": 0.2518,
+        "net_worth": 41483769.86,
+        "wellbeing": 0.886
+      },
+      {
+        "wealth": 507568627.5183431,
+        "gini": 0.3138,
+        "net_worth": 35315512.47,
+        "wellbeing": 0.8782
+      },
+      {
+        "wealth": 507568627.51839787,
+        "gini": 0.2086,
+        "net_worth": 54900715.27,
+        "wellbeing": 0.8898
+      },
+      {
+        "wealth": 507568627.518362,
+        "gini": 0.197,
+        "net_worth": 54834091.78,
+        "wellbeing": 0.8919
+      },
+      {
+        "wealth": 507568627.5183826,
+        "gini": 0.2197,
+        "net_worth": 36093675.31,
+        "wellbeing": 0.8896
+      },
+      {
+        "wealth": 507568627.51838773,
+        "gini": 0.2496,
+        "net_worth": 46311896.58,
+        "wellbeing": 0.8842
+      },
+      {
+        "wealth": 507568627.5183855,
+        "gini": 0.1845,
+        "net_worth": 40358177.84,
+        "wellbeing": 0.8934
+      },
+      {
+        "wealth": 507568627.51840174,
+        "gini": 0.2945,
+        "net_worth": 39293780.29,
+        "wellbeing": 0.8798
+      },
+      {
+        "wealth": 507568627.5183593,
+        "gini": 0.2626,
+        "net_worth": 37096119.12,
+        "wellbeing": 0.8851
+      },
+      {
+        "wealth": 507568627.51838356,
+        "gini": 0.2415,
+        "net_worth": 53494729.79,
+        "wellbeing": 0.8856
+      },
+      {
+        "wealth": 507568627.5183885,
+        "gini": 0.2338,
+        "net_worth": 49470912.25,
+        "wellbeing": 0.886
+      },
+      {
+        "wealth": 507568627.51837945,
+        "gini": 0.2395,
+        "net_worth": 49966357.87,
+        "wellbeing": 0.8865
+      }
+    ],
+    "US_Style": [
+      {
+        "wealth": 507568627.51843804,
+        "gini": 0.1221,
+        "net_worth": 37253713.4,
+        "wellbeing": 0.8695
+      },
+      {
+        "wealth": 507568627.51837516,
+        "gini": 0.1199,
+        "net_worth": 42376043.63,
+        "wellbeing": 0.8673
+      },
+      {
+        "wealth": 507568627.5183779,
+        "gini": 0.1326,
+        "net_worth": 43675322.91,
+        "wellbeing": 0.8835
+      },
+      {
+        "wealth": 507568627.518392,
+        "gini": 0.1302,
+        "net_worth": 43063194.64,
+        "wellbeing": 0.8706
+      },
+      {
+        "wealth": 507568627.5183964,
+        "gini": 0.1412,
+        "net_worth": 39346892.22,
+        "wellbeing": 0.8636
+      },
+      {
+        "wealth": 507568627.5183948,
+        "gini": 0.1496,
+        "net_worth": 44790165.34,
+        "wellbeing": 0.8572
+      },
+      {
+        "wealth": 507568627.5183924,
+        "gini": 0.133,
+        "net_worth": 39524352.91,
+        "wellbeing": 0.8801
+      },
+      {
+        "wealth": 507568627.51839703,
+        "gini": 0.1159,
+        "net_worth": 42150245.25,
+        "wellbeing": 0.8682
+      },
+      {
+        "wealth": 507568627.51839304,
+        "gini": 0.1554,
+        "net_worth": 49128260.01,
+        "wellbeing": 0.8775
+      },
+      {
+        "wealth": 507568627.5183934,
+        "gini": 0.1034,
+        "net_worth": 34226382.33,
+        "wellbeing": 0.8839
+      },
+      {
+        "wealth": 507568627.5183926,
+        "gini": 0.1367,
+        "net_worth": 42246188.71,
+        "wellbeing": 0.866
+      },
+      {
+        "wealth": 507568627.5183791,
+        "gini": 0.1445,
+        "net_worth": 42561562.68,
+        "wellbeing": 0.8621
+      },
+      {
+        "wealth": 507568627.518409,
+        "gini": 0.0947,
+        "net_worth": 32744110.74,
+        "wellbeing": 0.8821
+      },
+      {
+        "wealth": 507568627.51831406,
+        "gini": 0.1013,
+        "net_worth": 32806745.13,
+        "wellbeing": 0.8622
+      },
+      {
+        "wealth": 507568627.5183578,
+        "gini": 0.1293,
+        "net_worth": 41551047.44,
+        "wellbeing": 0.8648
+      },
+      {
+        "wealth": 507568627.51838005,
+        "gini": 0.1168,
+        "net_worth": 45805599.59,
+        "wellbeing": 0.8779
+      },
+      {
+        "wealth": 507568627.51835644,
+        "gini": 0.1468,
+        "net_worth": 47779288.79,
+        "wellbeing": 0.8845
+      },
+      {
+        "wealth": 507568627.51838505,
+        "gini": 0.0963,
+        "net_worth": 35131160.16,
+        "wellbeing": 0.877
+      },
+      {
+        "wealth": 507568627.5183515,
+        "gini": 0.1225,
+        "net_worth": 41023475.62,
+        "wellbeing": 0.8649
+      },
+      {
+        "wealth": 507568627.518375,
+        "gini": 0.1431,
+        "net_worth": 49727130.08,
+        "wellbeing": 0.8851
+      },
+      {
+        "wealth": 507568627.5184129,
+        "gini": 0.12,
+        "net_worth": 36873095.52,
+        "wellbeing": 0.8613
+      },
+      {
+        "wealth": 507568627.51841336,
+        "gini": 0.1294,
+        "net_worth": 45962139.43,
+        "wellbeing": 0.87
+      },
+      {
+        "wealth": 507568627.5183705,
+        "gini": 0.1314,
+        "net_worth": 39569273.81,
+        "wellbeing": 0.8745
+      },
+      {
+        "wealth": 507568627.5183582,
+        "gini": 0.1174,
+        "net_worth": 42922095.06,
+        "wellbeing": 0.8595
+      },
+      {
+        "wealth": 507568627.51838565,
+        "gini": 0.1577,
+        "net_worth": 50670223.58,
+        "wellbeing": 0.8829
+      },
+      {
+        "wealth": 507568627.5183902,
+        "gini": 0.1224,
+        "net_worth": 38504011.38,
+        "wellbeing": 0.8813
+      },
+      {
+        "wealth": 507568627.5184555,
+        "gini": 0.0786,
+        "net_worth": 31680843.86,
+        "wellbeing": 0.8634
+      },
+      {
+        "wealth": 507568627.518381,
+        "gini": 0.1021,
+        "net_worth": 30927500.85,
+        "wellbeing": 0.8661
+      },
+      {
+        "wealth": 507568627.5184024,
+        "gini": 0.1405,
+        "net_worth": 44345405.03,
+        "wellbeing": 0.8647
+      },
+      {
+        "wealth": 507568627.5184132,
+        "gini": 0.1421,
+        "net_worth": 44484468.44,
+        "wellbeing": 0.8791
+      },
+      {
+        "wealth": 507568627.51837504,
+        "gini": 0.1159,
+        "net_worth": 33811285.55,
+        "wellbeing": 0.8751
+      },
+      {
+        "wealth": 507568627.5184219,
+        "gini": 0.1195,
+        "net_worth": 46794765.5,
+        "wellbeing": 0.8628
+      },
+      {
+        "wealth": 507568627.51837707,
+        "gini": 0.1216,
+        "net_worth": 43614644.38,
+        "wellbeing": 0.8747
+      },
+      {
+        "wealth": 507568627.51838464,
+        "gini": 0.1378,
+        "net_worth": 36329547.48,
+        "wellbeing": 0.8854
+      },
+      {
+        "wealth": 507568627.5183603,
+        "gini": 0.0926,
+        "net_worth": 34827066.47,
+        "wellbeing": 0.8738
+      },
+      {
+        "wealth": 507568627.51837873,
+        "gini": 0.1407,
+        "net_worth": 49247802.32,
+        "wellbeing": 0.8725
+      },
+      {
+        "wealth": 507568627.5183624,
+        "gini": 0.1199,
+        "net_worth": 36458508.29,
+        "wellbeing": 0.8686
+      },
+      {
+        "wealth": 507568627.5183916,
+        "gini": 0.1189,
+        "net_worth": 40949781.17,
+        "wellbeing": 0.8603
+      },
+      {
+        "wealth": 507568627.51838416,
+        "gini": 0.1303,
+        "net_worth": 40454586.25,
+        "wellbeing": 0.8573
+      },
+      {
+        "wealth": 507568627.5183877,
+        "gini": 0.1091,
+        "net_worth": 41436445.55,
+        "wellbeing": 0.886
+      },
+      {
+        "wealth": 507568627.5183981,
+        "gini": 0.1151,
+        "net_worth": 40177319.76,
+        "wellbeing": 0.8612
+      },
+      {
+        "wealth": 507568627.51838326,
+        "gini": 0.1148,
+        "net_worth": 33881850.52,
+        "wellbeing": 0.8639
+      },
+      {
+        "wealth": 507568627.51838064,
+        "gini": 0.1404,
+        "net_worth": 43284125.47,
+        "wellbeing": 0.8746
+      },
+      {
+        "wealth": 507568627.518417,
+        "gini": 0.1065,
+        "net_worth": 37636394.94,
+        "wellbeing": 0.8792
+      },
+      {
+        "wealth": 507568627.51833475,
+        "gini": 0.0782,
+        "net_worth": 32849123.51,
+        "wellbeing": 0.8708
+      },
+      {
+        "wealth": 507568627.51836854,
+        "gini": 0.1323,
+        "net_worth": 45576537.15,
+        "wellbeing": 0.8759
+      },
+      {
+        "wealth": 507568627.5184002,
+        "gini": 0.1282,
+        "net_worth": 49803087.41,
+        "wellbeing": 0.8775
+      },
+      {
+        "wealth": 507568627.5183804,
+        "gini": 0.1385,
+        "net_worth": 39998351.82,
+        "wellbeing": 0.8669
+      },
+      {
+        "wealth": 507568627.5183541,
+        "gini": 0.1332,
+        "net_worth": 41764103.98,
+        "wellbeing": 0.881
+      },
+      {
+        "wealth": 507568627.518396,
+        "gini": 0.0924,
+        "net_worth": 31122147.03,
+        "wellbeing": 0.8626
+      }
+    ]
+  }
+}

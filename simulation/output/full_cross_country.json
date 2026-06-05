@@ -1,0 +1,66 @@
+{
+  "US": {
+    "delta": 0.1081,
+    "drivers": [
+      "ImportComp (24%)",
+      "ImportDisp (24%)",
+      "SBTC (20%)"
+    ]
+  },
+  "UK": {
+    "delta": 0.1761,
+    "drivers": [
+      "ImportComp (15%)",
+      "ImportDisp (15%)",
+      "SBTC (6%)"
+    ]
+  },
+  "France": {
+    "delta": -0.0394,
+    "drivers": [
+      "ProgTax (179%)",
+      "SBTC (46%)",
+      "ImportComp (36%)"
+    ]
+  },
+  "Brazil": {
+    "delta": -0.0456,
+    "drivers": [
+      "Patrimonial (237%)",
+      "SBTC (18%)",
+      "ProgTax (16%)"
+    ]
+  },
+  "Japan": {
+    "delta": 0.062299999999999967,
+    "drivers": [
+      "Informal Sector (59%)",
+      "Progressive Tax (29%)",
+      "SBTC (23%)"
+    ]
+  },
+  "India": {
+    "delta": 0.004799999999999971,
+    "drivers": [
+      "SBTC (900%)",
+      "Financialization (194%)",
+      "Elite Capture (67%)"
+    ]
+  },
+  "China": {
+    "delta": 0.0973,
+    "drivers": [
+      "SBTC (29%)",
+      "Informal Sector (23%)",
+      "Financialization (9%)"
+    ]
+  },
+  "South_Korea": {
+    "delta": -0.0012000000000000344,
+    "drivers": [
+      "SBTC (1317%)",
+      "Financialization (483%)",
+      "Elite Capture (267%)"
+    ]
+  }
+}

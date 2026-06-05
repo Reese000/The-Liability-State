@@ -1,0 +1,366 @@
+{
+  "Liability State": [
+    {
+      "name": "Liability State",
+      "wealth": 506133783.686413,
+      "gini": 0.191,
+      "w_mean": 968710.0,
+      "w_min": 479101.48,
+      "w_max": 1492031.66,
+      "div": 362.61,
+      "txns": 50640
+    },
+    {
+      "name": "Liability State",
+      "wealth": 506205489.16930926,
+      "gini": 0.1678,
+      "w_mean": 978160.87,
+      "w_min": 454197.23,
+      "w_max": 1488251.89,
+      "div": 340.29,
+      "txns": 50640
+    },
+    {
+      "name": "Liability State",
+      "wealth": 505395887.6642639,
+      "gini": 0.172,
+      "w_mean": 1030439.25,
+      "w_min": 448828.5,
+      "w_max": 1531916.65,
+      "div": 397.86,
+      "txns": 50640
+    },
+    {
+      "name": "Liability State",
+      "wealth": 506040500.6996235,
+      "gini": 0.1765,
+      "w_mean": 1018931.04,
+      "w_min": 468018.63,
+      "w_max": 1543784.96,
+      "div": 397.78,
+      "txns": 50640
+    },
+    {
+      "name": "Liability State",
+      "wealth": 505853317.22186667,
+      "gini": 0.1798,
+      "w_mean": 986409.97,
+      "w_min": 429346.76,
+      "w_max": 1485389.29,
+      "div": 377.29,
+      "txns": 50640
+    }
+  ],
+  "US-style": [
+    {
+      "name": "US-style",
+      "wealth": 505233783.68642086,
+      "gini": 0.1866,
+      "w_mean": 627202.38,
+      "w_min": 289750.55,
+      "w_max": 970361.02,
+      "div": 0,
+      "txns": 43200
+    },
+    {
+      "name": "US-style",
+      "wealth": 505305489.1693062,
+      "gini": 0.1632,
+      "w_mean": 629421.68,
+      "w_min": 272744.39,
+      "w_max": 936248.55,
+      "div": 0,
+      "txns": 43200
+    },
+    {
+      "name": "US-style",
+      "wealth": 504495887.66425484,
+      "gini": 0.1644,
+      "w_mean": 661071.04,
+      "w_min": 306280.96,
+      "w_max": 967626.58,
+      "div": 0,
+      "txns": 43200
+    },
+    {
+      "name": "US-style",
+      "wealth": 505140500.69962025,
+      "gini": 0.17,
+      "w_mean": 656003.93,
+      "w_min": 285124.72,
+      "w_max": 962425.26,
+      "div": 0,
+      "txns": 43200
+    },
+    {
+      "name": "US-style",
+      "wealth": 504953317.22184426,
+      "gini": 0.1727,
+      "w_mean": 635669.53,
+      "w_min": 289063.17,
+      "w_max": 941686.34,
+      "div": 0,
+      "txns": 43200
+    }
+  ],
+  "Nordic Social Democracy": [
+    {
+      "name": "Nordic Social Democracy",
+      "wealth": 505233783.68642664,
+      "gini": 0.0959,
+      "w_mean": 339327.96,
+      "w_min": 255344.18,
+      "w_max": 474656.81,
+      "div": 0,
+      "txns": 43200
+    },
+    {
+      "name": "Nordic Social Democracy",
+      "wealth": 505305489.1692992,
+      "gini": 0.0839,
+      "w_mean": 318530.21,
+      "w_min": 234378.62,
+      "w_max": 448882.9,
+      "div": 0,
+      "txns": 43200
+    },
+    {
+      "name": "Nordic Social Democracy",
+      "wealth": 504495887.66427255,
+      "gini": 0.0977,
+      "w_mean": 331605.56,
+      "w_min": 244534.28,
+      "w_max": 494962.98,
+      "div": 0,
+      "txns": 43200
+    },
+    {
+      "name": "Nordic Social Democracy",
+      "wealth": 505140500.6996395,
+      "gini": 0.0808,
+      "w_mean": 332985.22,
+      "w_min": 253340.51,
+      "w_max": 446419.84,
+      "div": 0,
+      "txns": 43200
+    },
+    {
+      "name": "Nordic Social Democracy",
+      "wealth": 504953317.2218712,
+      "gini": 0.0817,
+      "w_mean": 325200.48,
+      "w_min": 249444.66,
+      "w_max": 446583.75,
+      "div": 0,
+      "txns": 43200
+    }
+  ],
+  "Singapore-style": [
+    {
+      "name": "Singapore-style",
+      "wealth": 515104965.24914384,
+      "gini": 0.2153,
+      "w_mean": 827841.5,
+      "w_min": 348011.66,
+      "w_max": 1324961.28,
+      "div": 0,
+      "txns": 50354
+    },
+    {
+      "name": "Singapore-style",
+      "wealth": 515329774.7885778,
+      "gini": 0.1879,
+      "w_mean": 845495.43,
+      "w_min": 343990.67,
+      "w_max": 1364722.13,
+      "div": 0,
+      "txns": 50400
+    },
+    {
+      "name": "Singapore-style",
+      "wealth": 515112244.4411219,
+      "gini": 0.1971,
+      "w_mean": 877040.47,
+      "w_min": 309953.84,
+      "w_max": 1386917.88,
+      "div": 0,
+      "txns": 50390
+    },
+    {
+      "name": "Singapore-style",
+      "wealth": 515514239.8985918,
+      "gini": 0.2009,
+      "w_mean": 867079.19,
+      "w_min": 320961.78,
+      "w_max": 1417541.81,
+      "div": 0,
+      "txns": 50393
+    },
+    {
+      "name": "Singapore-style",
+      "wealth": 514996436.8843206,
+      "gini": 0.2045,
+      "w_mean": 841963.77,
+      "w_min": 267293.85,
+      "w_max": 1352065.68,
+      "div": 0,
+      "txns": 50400
+    }
+  ],
+  "Pure Georgist": [
+    {
+      "name": "Pure Georgist",
+      "wealth": 505233783.68641233,
+      "gini": 0.1932,
+      "w_mean": 978531.33,
+      "w_min": 478732.81,
+      "w_max": 1514024.18,
+      "div": 326.77,
+      "txns": 43200
+    },
+    {
+      "name": "Pure Georgist",
+      "wealth": 505305489.16930896,
+      "gini": 0.1699,
+      "w_mean": 986933.48,
+      "w_min": 452395.07,
+      "w_max": 1505154.5,
+      "div": 299.95,
+      "txns": 43200
+    },
+    {
+      "name": "Pure Georgist",
+      "wealth": 504495887.6642657,
+      "gini": 0.1736,
+      "w_mean": 1040934.75,
+      "w_min": 448914.67,
+      "w_max": 1546959.83,
+      "div": 360.07,
+      "txns": 43200
+    },
+    {
+      "name": "Pure Georgist",
+      "wealth": 505140500.69962156,
+      "gini": 0.1781,
+      "w_mean": 1030066.14,
+      "w_min": 467482.86,
+      "w_max": 1566356.57,
+      "div": 361.8,
+      "txns": 43200
+    },
+    {
+      "name": "Pure Georgist",
+      "wealth": 504953317.22186154,
+      "gini": 0.1818,
+      "w_mean": 996685.12,
+      "w_min": 428202.08,
+      "w_max": 1505998.64,
+      "div": 341.0,
+      "txns": 43200
+    }
+  ],
+  "Mutualist LS": [
+    {
+      "name": "Mutualist LS",
+      "wealth": 505233783.6864125,
+      "gini": 0.2046,
+      "w_mean": 934463.67,
+      "w_min": 362485.45,
+      "w_max": 1473258.66,
+      "div": 294.09,
+      "txns": 51013
+    },
+    {
+      "name": "Mutualist LS",
+      "wealth": 505305489.1693094,
+      "gini": 0.1799,
+      "w_mean": 943746.88,
+      "w_min": 405485.08,
+      "w_max": 1523327.15,
+      "div": 269.96,
+      "txns": 51116
+    },
+    {
+      "name": "Mutualist LS",
+      "wealth": 504495887.66426796,
+      "gini": 0.1837,
+      "w_mean": 989725.97,
+      "w_min": 432809.67,
+      "w_max": 1507756.55,
+      "div": 324.06,
+      "txns": 51065
+    },
+    {
+      "name": "Mutualist LS",
+      "wealth": 505140500.6996216,
+      "gini": 0.1915,
+      "w_mean": 977727.85,
+      "w_min": 384151.39,
+      "w_max": 1564913.91,
+      "div": 325.62,
+      "txns": 51104
+    },
+    {
+      "name": "Mutualist LS",
+      "wealth": 504953317.2218625,
+      "gini": 0.1904,
+      "w_mean": 945322.95,
+      "w_min": 346527.58,
+      "w_max": 1488163.07,
+      "div": 306.9,
+      "txns": 51105
+    }
+  ],
+  "Laissez-Faire": [
+    {
+      "name": "Laissez-Faire",
+      "wealth": 505233783.6864178,
+      "gini": 0.2004,
+      "w_mean": 966715.19,
+      "w_min": 418435.3,
+      "w_max": 1528571.94,
+      "div": 0,
+      "txns": 16800
+    },
+    {
+      "name": "Laissez-Faire",
+      "wealth": 505305489.169304,
+      "gini": 0.1749,
+      "w_mean": 974633.34,
+      "w_min": 395640.17,
+      "w_max": 1488150.96,
+      "div": 0,
+      "txns": 16800
+    },
+    {
+      "name": "Laissez-Faire",
+      "wealth": 504495887.66426456,
+      "gini": 0.1767,
+      "w_mean": 1026296.37,
+      "w_min": 433991.49,
+      "w_max": 1509495.93,
+      "div": 0,
+      "txns": 16800
+    },
+    {
+      "name": "Laissez-Faire",
+      "wealth": 505140500.6996221,
+      "gini": 0.1833,
+      "w_mean": 1013183.5,
+      "w_min": 405464.09,
+      "w_max": 1511929.46,
+      "div": 0,
+      "txns": 16800
+    },
+    {
+      "name": "Laissez-Faire",
+      "wealth": 504953317.22186285,
+      "gini": 0.1869,
+      "w_mean": 981440.09,
+      "w_min": 409866.85,
+      "w_max": 1489154.32,
+      "div": 0,
+      "txns": 16800
+    }
+  ]
+}

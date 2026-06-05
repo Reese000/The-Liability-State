@@ -290,7 +290,69 @@ The Liability State addresses this through the **Regional Compact** layer, not t
 
 ---
 
-## Hierarchy Structure
+## The National Alliance: Enumerated Powers
+
+The Alliance is a strictly enumerated service provider, not a sovereign. Its powers are limited to four functions, each with a constitutional mandate, a time-limited charter, and no authority to expand beyond its scope.
+
+### The Four Functions
+
+| Function | Description | Funding Source |
+|----------|-------------|---------------|
+| **Inter-Compact Dispute Resolution** | Supreme Trust Oracle — adjudicates disputes between compacts, enforces cross-compact judgments, issues Freedom of Exit Determinations for external conquest review | Alliance skim |
+| **Border Defense** | Contracts Private Military Companies for territorial defense against foreign threats. Coordinates intelligence and screening. May not fund offensive operations — those are separate War IPO mechanisms (see [Defense §Offensive Operations](./07_defense_military.md#offensive-operations-the-war-ipo)) | Alliance skim + War IPO |
+| **Currency & Land Value Index** | National Trust administers the LS Dollar peg, publishes the daily Land Value Index, maintains uniform valuation methodology across all compacts | Alliance skim |
+| **Citizen's Dividend Floor** | Calculates and publishes the constitutional minimum Dividend amount (pegged to subsistence in the cheapest habitable area). Audits compact compliance. Compacts may supplement but not reduce. | Alliance skim |
+
+**The Alliance has no power to:**
+- Impose taxes of any kind (income, sales, VAT, corporate)
+- Regulate commerce, land use, environment, labor, or any economic activity
+- Mandate compact-level policies or standards beyond the constitutional floor
+- Maintain a standing army (all military capacity is private PMC, contracted per-need)
+- Issue debt that binds compacts
+- Create new government departments or agencies beyond the four functions
+
+Any spending beyond the four functions is ultra vires and is subject to lawsuit by any compact in the STO. Alliance officials who authorize ultra vires spending are personally liable for the amount.
+
+### Funding: The 10% Skim
+
+The Alliance is funded by a **constitutional skim of 10% of compact-level LVT revenue**:
+
+| Parameter | Value | Rationale |
+|-----------|-------|-----------|
+| **Rate** | 10% of each compact's LVT revenue | High enough to fund Alliance functions and build rapid war credit, low enough that even full spending cannot cripple the economy |
+| **Collection** | Automatic lockbox — compacts remit directly to a constitutionally protected trust. Compacts cannot withhold or delay. | Prevents compacts from leveraging the Alliance by starving its budget |
+| **Reallocation** | No discretion — trust disburses to the four functions by formula (not by Alliance choice) | Prevents the Alliance from picking winners among its own functions |
+| **Refund** | All unspent balance at fiscal year end is refunded **proportional to each compact's contribution** → flows back to that compact's Citizen Dividend pool | Creates constant pressure for efficiency; any waste is money that does not return to citizens |
+
+**Why proportional refund, not per-capita:** The Alliance is a service provider, not a redistribution engine. Compacts that pay more receive more back when the Alliance underspends. This is consistent with the minimal Alliance philosophy — the Alliance has no mandate to transfer wealth between compacts.
+
+**Why 10% and not lower:** In peacetime, most of the 10% will be refunded, creating strong compact scrutiny of any Alliance spending. In crisis (a war bond), the skim provides immediate capital credibility — insurers and investors see a 10% standing revenue stream backing Alliance commitments, which makes Victory Bonds more credible.
+
+### Sunset Mechanism
+
+Each Alliance function has a **10-year charter** that must be re-authorized by a majority of Regional Compacts to continue:
+
+| Phase | Action | Effect |
+|-------|--------|--------|
+| **Year 0** | Compact ratifies the constitution | Alliance established with four functions, 10-year clock starts |
+| **Year 8** | STO conducts a performance review of each function | Published report: spending, outcomes, waste, efficiency |
+| **Year 10** | Each compact votes separately on each of the four functions | Function dies if majority of compacts do not re-authorize |
+| **If a function dies** | Its residual budget is divided among compacts proportional to their contributions | No Alliance function is permanent; all must earn renewal |
+
+A function may be re-authorized for another 10 years, modified (e.g., scope reduced), or terminated. A function may also be terminated early by a 75% supermajority of the House of Repeal plus ratification by a majority of compacts.
+
+**Why sunset matters:** Without it, the Alliance's four functions would be permanent regardless of performance. The sunset clause forces compacts to periodically evaluate whether each function is still worth funding. It also prevents function creep — if the Alliance tries to expand its scope beyond the four functions, compacts can let the charter expire and negotiate a narrower replacement.
+
+### Accountability Summary
+
+| Mechanism | What it prevents | Response time |
+|-----------|-----------------|:------------:|
+| **Enumerated four functions** | Mission creep | Immediate (lawsuit for ultra vires) |
+| **10% skim + automatic refund** | Hoarding, empire-building | Annual (refund) |
+| **Proportional refund** | Redistribution through Alliance | Annual |
+| **10-year sunset** | Permanent bureaucracy | Decade, can be accelerated |
+| **Compact audit rights** | Wasteful spending within functions | On demand (STO complaint) |
+| **Personal liability for officials** | Authorizing unauthorized spending | Immediate (private court suit) |
 
 ```text
 ┌───────────────────────────────────────────────────┐

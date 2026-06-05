@@ -1,0 +1,188 @@
+{
+  "US": {
+    "1960": {
+      "gini": 0.3521,
+      "actual": 0.36,
+      "err_pct": 2.19,
+      "delta": null,
+      "trend": "START"
+    },
+    "2020": {
+      "gini": 0.4346,
+      "actual": 0.42,
+      "err_pct": 3.48,
+      "delta": 0.0825,
+      "trend": "RISING"
+    }
+  },
+  "UK": {
+    "1960": {
+      "gini": 0.2717,
+      "actual": 0.28,
+      "err_pct": 2.96,
+      "delta": null,
+      "trend": "START"
+    },
+    "2020": {
+      "gini": 0.4216,
+      "actual": 0.42,
+      "err_pct": 0.38,
+      "delta": 0.1499,
+      "trend": "RISING"
+    }
+  },
+  "Germany": {
+    "1960": {
+      "gini": 0.298,
+      "actual": 0.3,
+      "err_pct": 0.67,
+      "delta": null,
+      "trend": "START"
+    },
+    "1990": {
+      "gini": 0.2783,
+      "actual": 0.28,
+      "err_pct": 0.61,
+      "delta": -0.0197,
+      "trend": "STABLE"
+    },
+    "2020": {
+      "gini": 0.3026,
+      "actual": 0.3,
+      "err_pct": 0.87,
+      "delta": 0.0243,
+      "trend": "RISING"
+    }
+  },
+  "France": {
+    "1960": {
+      "gini": 0.3508,
+      "actual": 0.35,
+      "err_pct": 0.23,
+      "delta": null,
+      "trend": "START"
+    },
+    "1980": {
+      "gini": 0.3647,
+      "actual": 0.37,
+      "err_pct": 1.43,
+      "delta": 0.0139,
+      "trend": "STABLE"
+    },
+    "2000": {
+      "gini": 0.3401,
+      "actual": 0.34,
+      "err_pct": 0.03,
+      "delta": -0.0246,
+      "trend": "FALLING"
+    },
+    "2020": {
+      "gini": 0.2976,
+      "actual": 0.3,
+      "err_pct": 0.8,
+      "delta": -0.0425,
+      "trend": "FALLING"
+    }
+  },
+  "Brazil": {
+    "1960": {
+      "gini": 0.5717,
+      "actual": 0.57,
+      "err_pct": 0.3,
+      "delta": null,
+      "trend": "START"
+    },
+    "1990": {
+      "gini": 0.5568,
+      "actual": 0.6,
+      "err_pct": 7.2,
+      "delta": -0.0149,
+      "trend": "STABLE"
+    },
+    "2020": {
+      "gini": 0.5261,
+      "actual": 0.53,
+      "err_pct": 0.74,
+      "delta": -0.0307,
+      "trend": "FALLING"
+    }
+  },
+  "Japan": {
+    "1960": {
+      "gini": 0.3366,
+      "actual": 0.35,
+      "err_pct": 3.83,
+      "delta": null,
+      "trend": "START"
+    },
+    "1985": {
+      "gini": 0.3698,
+      "actual": 0.36,
+      "err_pct": 2.72,
+      "delta": 0.0332,
+      "trend": "RISING"
+    },
+    "2020": {
+      "gini": 0.3989,
+      "actual": 0.4,
+      "err_pct": 0.28,
+      "delta": 0.0291,
+      "trend": "RISING"
+    }
+  },
+  "India": {
+    "1970": {
+      "gini": 0.4798,
+      "actual": 0.48,
+      "err_pct": 0.04,
+      "delta": null,
+      "trend": "START"
+    },
+    "2020": {
+      "gini": 0.4846,
+      "actual": 0.48,
+      "err_pct": 0.96,
+      "delta": 0.0048,
+      "trend": "STABLE"
+    }
+  },
+  "China": {
+    "1980": {
+      "gini": 0.2678,
+      "actual": 0.28,
+      "err_pct": 4.36,
+      "delta": null,
+      "trend": "START"
+    },
+    "2000": {
+      "gini": 0.429,
+      "actual": 0.43,
+      "err_pct": 0.23,
+      "delta": 0.1612,
+      "trend": "RISING"
+    },
+    "2020": {
+      "gini": 0.3651,
+      "actual": 0.36,
+      "err_pct": 1.42,
+      "delta": -0.0639,
+      "trend": "FALLING"
+    }
+  },
+  "South_Korea": {
+    "1980": {
+      "gini": 0.3274,
+      "actual": 0.33,
+      "err_pct": 0.79,
+      "delta": null,
+      "trend": "START"
+    },
+    "2020": {
+      "gini": 0.3262,
+      "actual": 0.33,
+      "err_pct": 1.15,
+      "delta": -0.0012,
+      "trend": "STABLE"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+WARNING:p8_LS_Full:Harberger self-assessment is configured but NOT YET WIRED into Phase 8. Flag ignored — use_harberger land remains under simple LVT.
+WARNING:p8_LS_Full:Harberger self-assessment is configured but NOT YET WIRED into Phase 8. Flag ignored — use_harberger land remains under simple LVT.
+WARNING:p8_LS_Full:Harberger self-assessment is configured but NOT YET WIRED into Phase 8. Flag ignored — use_harberger land remains under simple LVT.
+WARNING:p8_LS_Full:Harberger self-assessment is configured but NOT YET WIRED into Phase 8. Flag ignored — use_harberger land remains under simple LVT.
+WARNING:p8_LS_Full:Harberger self-assessment is configured but NOT YET WIRED into Phase 8. Flag ignored — use_harberger land remains under simple LVT.
+WARNING:p8_LS_Full:Harberger self-assessment is configured but NOT YET WIRED into Phase 8. Flag ignored — use_harberger land remains under simple LVT.
+WARNING:p8_Pure_Georgis:Harberger self-assessment is configured but NOT YET WIRED into Phase 8. Flag ignored — use_harberger land remains under simple LVT.
+WARNING:p8_Pure_Georgis:Harberger self-assessment is configured but NOT YET WIRED into Phase 8. Flag ignored — use_harberger land remains under simple LVT.
+WARNING:p8_Pure_Georgis:Harberger self-assessment is configured but NOT YET WIRED into Phase 8. Flag ignored — use_harberger land remains under simple LVT.
+WARNING:p8_Pure_Georgis:Harberger self-assessment is configured but NOT YET WIRED into Phase 8. Flag ignored — use_harberger land remains under simple LVT.
+WARNING:p8_Pure_Georgis:Harberger self-assessment is configured but NOT YET WIRED into Phase 8. Flag ignored — use_harberger land remains under simple LVT.
+WARNING:p8_Pure_Georgis:Harberger self-assessment is configured but NOT YET WIRED into Phase 8. Flag ignored — use_harberger land remains under simple LVT.
+LVT RATE SENSITIVITY
+System             LVT Rate     Gini      Mean$       CRRA
+--------------------------------------------------------
+LS_Full                0.01   0.1796 $1,891,440     1693.4
+LS_Full                0.02   0.1854 $1,889,168     1693.1
+LS_Full                0.03   0.1895 $1,890,070     1692.9
+LS_Full                0.04   0.1926 $1,890,984     1692.9
+LS_Full                0.05   0.1963 $1,891,345     1692.8
+LS_Full                0.07   0.2029 $1,891,889     1692.7
+Pure_Georgist          0.01   0.2024 $1,906,340     1696.8
+Pure_Georgist          0.02   0.2088 $1,906,846     1696.8
+Pure_Georgist          0.03   0.2126 $1,909,041     1696.8
+Pure_Georgist          0.04   0.2157 $1,910,581     1696.8
+Pure_Georgist          0.05   0.2194 $1,911,415     1696.8
+Pure_Georgist          0.07   0.2265 $1,911,954     1696.8
+
+INCOME TAX RATE SENSITIVITY
+System             Tax Rate     Gini      Mean$       CRRA
+--------------------------------------------------------
+US_Style               0.10   0.1488 $1,625,998     1685.2
+US_Style               0.15   0.1471 $1,518,508     1679.9
+US_Style               0.20   0.1448 $1,425,629     1675.4
+US_Style               0.25   0.1420 $1,342,818     1671.3
+US_Style               0.30   0.1386 $1,267,610     1667.5
+US_Style               0.40   0.1298 $1,134,792     1659.7
+US_Style               0.50   0.1178 $1,020,641     1651.2
+Nordic                 0.10   0.1593 $1,837,139     1712.3
+Nordic                 0.15   0.1565 $1,708,754     1706.3
+Nordic                 0.20   0.1531 $1,601,256     1701.5
+Nordic                 0.25   0.1489 $1,507,338     1697.3
+Nordic                 0.30   0.1441 $1,423,442     1693.3
+Nordic                 0.40   0.1317 $1,278,877     1685.5
+Nordic                 0.50   0.1153 $1,159,181     1677.0

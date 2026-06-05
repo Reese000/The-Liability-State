@@ -1,0 +1,355 @@
+{
+  "run_label": "US Backtest \u2014 5 Inequality Mechanisms",
+  "periods": [
+    1960,
+    1980,
+    2000,
+    2020
+  ],
+  "actual_ginis": [
+    0.35,
+    0.38,
+    0.46,
+    0.48
+  ],
+  "baseline": {
+    "ginis": [
+      0.1845,
+      0.192,
+      0.1918,
+      0.1937
+    ],
+    "tax_gdp_pcts": [
+      22.62,
+      25.31,
+      22.6,
+      19.89
+    ],
+    "gov_shares": [
+      95.26,
+      92.03,
+      88.66,
+      85.1
+    ],
+    "trend": "STABLE",
+    "period_details": [
+      {
+        "period": 1960,
+        "inequality_params": {},
+        "metrics": {
+          "gini": 0.1845,
+          "final_gini": 0.1845,
+          "tax_gdp_pct": 22.62,
+          "gov_share_pct": 95.26,
+          "accumulated_tax": 4994416.04,
+          "total_wages": 21707311.87,
+          "total_biz_revenue": 371873.36,
+          "steps_run": 120,
+          "sys_balance": 483032730.68,
+          "ginis_by_step": [
+            0.1852,
+            0.1744,
+            0.1788,
+            0.1809,
+            0.1829,
+            0.1834,
+            0.1832,
+            0.1844,
+            0.1861,
+            0.1845
+          ]
+        },
+        "actual_gini": 0.35
+      },
+      {
+        "period": 1980,
+        "inequality_params": {},
+        "metrics": {
+          "gini": 0.192,
+          "final_gini": 0.192,
+          "tax_gdp_pct": 25.31,
+          "gov_share_pct": 92.03,
+          "accumulated_tax": 5479153.21,
+          "total_wages": 21274760.68,
+          "total_biz_revenue": 370134.73,
+          "steps_run": 120,
+          "sys_balance": 466658382.12,
+          "ginis_by_step": [
+            0.1863,
+            0.189,
+            0.1898,
+            0.1894,
+            0.1903,
+            0.1906,
+            0.1906,
+            0.1897,
+            0.1906,
+            0.192
+          ]
+        },
+        "actual_gini": 0.38
+      },
+      {
+        "period": 2000,
+        "inequality_params": {},
+        "metrics": {
+          "gini": 0.1918,
+          "final_gini": 0.1918,
+          "tax_gdp_pct": 22.6,
+          "gov_share_pct": 88.66,
+          "accumulated_tax": 4943690.02,
+          "total_wages": 21498926.81,
+          "total_biz_revenue": 371873.36,
+          "steps_run": 120,
+          "sys_balance": 449561745.45,
+          "ginis_by_step": [
+            0.192,
+            0.1915,
+            0.1907,
+            0.1921,
+            0.1918,
+            0.1916,
+            0.192,
+            0.1923,
+            0.1924,
+            0.1918
+          ]
+        },
+        "actual_gini": 0.46
+      },
+      {
+        "period": 2020,
+        "inequality_params": {},
+        "metrics": {
+          "gini": 0.1937,
+          "final_gini": 0.1937,
+          "tax_gdp_pct": 19.89,
+          "gov_share_pct": 85.1,
+          "accumulated_tax": 4386916.63,
+          "total_wages": 21679128.63,
+          "total_biz_revenue": 373611.99,
+          "steps_run": 120,
+          "sys_balance": 431500192.09,
+          "ginis_by_step": [
+            0.1927,
+            0.1927,
+            0.193,
+            0.1932,
+            0.1934,
+            0.1933,
+            0.1936,
+            0.1936,
+            0.1934,
+            0.1937
+          ]
+        },
+        "actual_gini": 0.48
+      }
+    ]
+  },
+  "full_mechanisms": {
+    "ginis": [
+      0.182,
+      0.2044,
+      0.2205,
+      0.2373
+    ],
+    "tax_gdp_pcts": [
+      12.77,
+      13.62,
+      14.62,
+      15.82
+    ],
+    "gov_shares": [
+      94.65,
+      90.37,
+      85.63,
+      80.31
+    ],
+    "trend": "RISING",
+    "period_details": [
+      {
+        "period": 1960,
+        "inequality_params": {
+          "skill_premium_growth": 0.015,
+          "union_coverage": 0.35,
+          "capital_income_share": 0.15,
+          "import_competition": 0.2,
+          "use_progressive_tax": true
+        },
+        "metrics": {
+          "gini": 0.182,
+          "final_gini": 0.182,
+          "tax_gdp_pct": 12.77,
+          "gov_share_pct": 94.65,
+          "accumulated_tax": 2991322.48,
+          "total_wages": 23057034.5,
+          "total_biz_revenue": 371873.36,
+          "steps_run": 120,
+          "sys_balance": 479972643.2,
+          "ginis_by_step": [
+            0.1762,
+            0.1647,
+            0.169,
+            0.1715,
+            0.1743,
+            0.1758,
+            0.1769,
+            0.1792,
+            0.1821,
+            0.182
+          ]
+        },
+        "actual_gini": 0.35
+      },
+      {
+        "period": 1980,
+        "inequality_params": {
+          "skill_premium_growth": 0.015,
+          "union_coverage": 0.2667,
+          "capital_income_share": 0.15,
+          "import_competition": 0.2,
+          "use_progressive_tax": true
+        },
+        "metrics": {
+          "gini": 0.2044,
+          "final_gini": 0.2044,
+          "tax_gdp_pct": 13.62,
+          "gov_share_pct": 90.37,
+          "accumulated_tax": 3476263.88,
+          "total_wages": 25143778.29,
+          "total_biz_revenue": 370134.73,
+          "steps_run": 120,
+          "sys_balance": 458269922.7,
+          "ginis_by_step": [
+            0.1853,
+            0.1892,
+            0.1914,
+            0.1928,
+            0.1951,
+            0.1969,
+            0.1986,
+            0.1994,
+            0.2017,
+            0.2044
+          ]
+        },
+        "actual_gini": 0.38
+      },
+      {
+        "period": 2000,
+        "inequality_params": {
+          "skill_premium_growth": 0.015,
+          "union_coverage": 0.1833,
+          "capital_income_share": 0.15,
+          "import_competition": 0.2,
+          "use_progressive_tax": true
+        },
+        "metrics": {
+          "gini": 0.2205,
+          "final_gini": 0.2205,
+          "tax_gdp_pct": 14.62,
+          "gov_share_pct": 85.63,
+          "accumulated_tax": 4183212.76,
+          "total_wages": 28240586.44,
+          "total_biz_revenue": 371873.36,
+          "steps_run": 120,
+          "sys_balance": 434225113.51,
+          "ginis_by_step": [
+            0.206,
+            0.2073,
+            0.2083,
+            0.2111,
+            0.2125,
+            0.2139,
+            0.2158,
+            0.2177,
+            0.2193,
+            0.2205
+          ]
+        },
+        "actual_gini": 0.46
+      },
+      {
+        "period": 2020,
+        "inequality_params": {
+          "skill_premium_growth": 0.015,
+          "union_coverage": 0.1,
+          "capital_income_share": 0.15,
+          "import_competition": 0.2,
+          "use_progressive_tax": true
+        },
+        "metrics": {
+          "gini": 0.2373,
+          "final_gini": 0.2373,
+          "tax_gdp_pct": 15.82,
+          "gov_share_pct": 80.31,
+          "accumulated_tax": 5091071.23,
+          "total_wages": 31800972.89,
+          "total_biz_revenue": 373611.99,
+          "steps_run": 120,
+          "sys_balance": 407254010.93,
+          "ginis_by_step": [
+            0.2228,
+            0.2243,
+            0.2261,
+            0.2278,
+            0.2295,
+            0.2311,
+            0.2329,
+            0.2344,
+            0.2356,
+            0.2373
+          ]
+        },
+        "actual_gini": 0.48
+      }
+    ],
+    "inequality_params_by_period": {
+      "1960": {
+        "skill_premium_growth": 0.015,
+        "union_coverage": 0.35,
+        "capital_income_share": 0.15,
+        "import_competition": 0.2,
+        "use_progressive_tax": true
+      },
+      "1980": {
+        "skill_premium_growth": 0.015,
+        "union_coverage": 0.2667,
+        "capital_income_share": 0.15,
+        "import_competition": 0.2,
+        "use_progressive_tax": true
+      },
+      "2000": {
+        "skill_premium_growth": 0.015,
+        "union_coverage": 0.1833,
+        "capital_income_share": 0.15,
+        "import_competition": 0.2,
+        "use_progressive_tax": true
+      },
+      "2020": {
+        "skill_premium_growth": 0.015,
+        "union_coverage": 0.1,
+        "capital_income_share": 0.15,
+        "import_competition": 0.2,
+        "use_progressive_tax": true
+      }
+    }
+  },
+  "analysis": {
+    "baseline_trend": "STABLE",
+    "full_trend": "RISING",
+    "actual_trend": "RISING",
+    "direction_matches_actual": true,
+    "pass_fail": "PASS",
+    "delta_1960_2020_baseline": 0.0092,
+    "delta_1960_2020_full": 0.0553,
+    "delta_1960_2020_actual": 0.13,
+    "improvements_by_period": {
+      "1960": -0.0025,
+      "1980": 0.0124,
+      "2000": 0.0287,
+      "2020": 0.0436
+    }
+  }
+}

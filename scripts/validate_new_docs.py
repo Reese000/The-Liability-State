@@ -240,8 +240,6 @@ def test_index_entries():
     # Check cross-references FROM conquest doctrine TO other docs
     cross_reference_file("07_defense_military.md", "2_Laws_and_Functions/06_political_structure.md",
                          "→ political_structure.md")
-    cross_reference_file("07_defense_military.md", "2_Laws_and_Functions/12_monetary_system.md",
-                         "→ 12_monetary_system.md (currency phase-in ref)")
 
     # Verify the 00_overview.md table entry
     overview_path = os.path.join(BASE, "2_Laws_and_Functions/00_overview.md")

@@ -1,0 +1,70 @@
+{
+  "uk_backtest": [
+    {
+      "period": "1960s",
+      "gini": 0.1891,
+      "actual": 0.28
+    },
+    {
+      "period": "1980s",
+      "gini": 0.1891,
+      "actual": 0.33
+    },
+    {
+      "period": "2000s",
+      "gini": 0.1823,
+      "actual": 0.44
+    },
+    {
+      "period": "2020s",
+      "gini": 0.1832,
+      "actual": 0.42
+    }
+  ],
+  "germany_backtest": [
+    {
+      "period": "1960s",
+      "gini": 0.1837,
+      "actual": 0.3
+    },
+    {
+      "period": "1980s",
+      "gini": 0.183,
+      "actual": 0.28
+    },
+    {
+      "period": "2000s",
+      "gini": 0.1696,
+      "actual": 0.35
+    },
+    {
+      "period": "2020s",
+      "gini": 0.1732,
+      "actual": 0.3
+    }
+  ],
+  "us_nordic_counterfactual": [
+    {
+      "period": "1960s",
+      "gini": 0.1851
+    },
+    {
+      "period": "1980s",
+      "gini": 0.1711
+    },
+    {
+      "period": "2000s",
+      "gini": 0.1556
+    },
+    {
+      "period": "2020s",
+      "gini": 0.168
+    }
+  ],
+  "money_creation_test": {
+    "closed_wealth": 507568627.5183676,
+    "closed_gini": 0.1837,
+    "open_wealth": 508375228.3850503,
+    "open_gini": 0.1837
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "1960": {
+    "gini": 0.298,
+    "actual": 0.3,
+    "err_pct": 0.67,
+    "net_worth_gini": 0.4063,
+    "delta": null,
+    "trend": "START"
+  },
+  "1990": {
+    "gini": 0.2782,
+    "actual": 0.28,
+    "err_pct": 0.64,
+    "net_worth_gini": 0.3915,
+    "delta": -0.0198,
+    "trend": "STABLE"
+  },
+  "2020": {
+    "gini": 0.3024,
+    "actual": 0.3,
+    "err_pct": 0.8,
+    "net_worth_gini": 0.3872,
+    "delta": 0.0242,
+    "trend": "RISING"
+  }
+}

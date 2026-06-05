@@ -208,41 +208,6 @@ The Dividend puts purchasing power into citizens' hands. In a growth phase, the 
 
 ---
 
-## Territorial Expansion and the Currency
-
-When the Liability State acquires new territory — whether through peaceful settlement, incorporation of a new compact, or the conquest framework described in [Defense §External Conquest Doctrine](./07_defense_military.md#external-conquest-doctrine) — the new land is assessed for LVT and added to the index.
-
-### The Phase-In Rule
-
-Newly acquired territory is phased into the LVI over **10 years**:
-
-| Year | Fraction of assessed value included |
-|:----:|:----------------------------------:|
-| 1-2 | 0% (stabilization period) |
-| 3 | 20% |
-| 4 | 30% |
-| 5 | 40% |
-| 6 | 50% |
-| 7 | 60% |
-| 8 | 70% |
-| 9 | 85% |
-| 10 | 100% |
-
-**Why**: This prevents sudden currency shocks from territorial changes. Whether the territory was acquired peacefully or through conquest, the currency base adjusts slowly. No overnight windfall for currency holders.
-
-### Space Frontier
-
-A new settlement on a lunar or off-world frontier begins with very low land value (no infrastructure, tiny population, minimal productivity). As the colony develops and land values rise:
-
-1. The settlement is assessed for LVT using the same Harberger model
-2. It is phased into the LVI over 10 years from the date of first assessment
-3. The currency appreciates gradually as the frontier matures
-4. The Dividend distributes the benefit of frontier growth to all citizens
-
-This is the system working as designed: the currency reflects real economic development, not speculative claims on future territory.
-
----
-
 ## Fractional-Reserve Banking and Private Credit
 
 The Liability State cannot ban credit creation. Private banks will exist and will lend against reserves at fractional ratios, creating private money as they do in any system.

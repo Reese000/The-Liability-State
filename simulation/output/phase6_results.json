@@ -1,0 +1,992 @@
+{
+  "LS_Full": [
+    {
+      "name": "LS_Full",
+      "wealth": 507392850.5933436,
+      "gini": 0.2225,
+      "w_mean": 1910207.62,
+      "w_min": 452188.97,
+      "w_max": 4326547.27,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1817,
+        0.1952,
+        0.2072,
+        0.2167,
+        0.2221,
+        0.2328,
+        0.2288,
+        0.2314,
+        0.2263,
+        0.2284,
+        0.2281,
+        0.2311
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 111261221.66,
+      "net_worth_gini": 0.4034,
+      "net_worth_mean": 1483482.96,
+      "wellbeing": 0.8882,
+      "child_count": 0,
+      "family_gini": 0.0
+    },
+    {
+      "name": "LS_Full",
+      "wealth": 507995236.1838107,
+      "gini": 0.2198,
+      "w_mean": 1751721.97,
+      "w_min": 774491.19,
+      "w_max": 3604645.65,
+      "div": 41.75,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1834,
+        0.2025,
+        0.2161,
+        0.2251,
+        0.2323,
+        0.2345,
+        0.2401,
+        0.2371,
+        0.2374,
+        0.2417,
+        0.2445,
+        0.245
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 102026339.07,
+      "net_worth_gini": 0.384,
+      "net_worth_mean": 1360351.19,
+      "wellbeing": 0.8885,
+      "child_count": 0,
+      "family_gini": 0.0
+    }
+  ],
+  "US_Style": [
+    {
+      "name": "US_Style",
+      "wealth": 507392850.5932729,
+      "gini": 0.1284,
+      "w_mean": 1427324.96,
+      "w_min": 818680.61,
+      "w_max": 2069577.26,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.168,
+        0.1561,
+        0.156,
+        0.1578,
+        0.1623,
+        0.1641,
+        0.1678,
+        0.168,
+        0.1691,
+        0.1678,
+        0.1689,
+        0.1693
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 91004588.69,
+      "net_worth_gini": 0.3055,
+      "net_worth_mean": 1213394.52,
+      "wellbeing": 0.8722,
+      "child_count": 0,
+      "family_gini": 0.0
+    },
+    {
+      "name": "US_Style",
+      "wealth": 507995236.18382764,
+      "gini": 0.149,
+      "w_mean": 1296684.81,
+      "w_min": 852570.06,
+      "w_max": 1915697.27,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1876,
+        0.1746,
+        0.1755,
+        0.1856,
+        0.1892,
+        0.1928,
+        0.1942,
+        0.1935,
+        0.1956,
+        0.1959,
+        0.1964,
+        0.1972
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 83270192.53,
+      "net_worth_gini": 0.2777,
+      "net_worth_mean": 1110269.23,
+      "wellbeing": 0.8701,
+      "child_count": 0,
+      "family_gini": 0.0
+    }
+  ],
+  "Nordic": [
+    {
+      "name": "Nordic",
+      "wealth": 507392850.5933691,
+      "gini": 0.1239,
+      "w_mean": 1344421.02,
+      "w_min": 806239.71,
+      "w_max": 1952692.25,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1663,
+        0.1451,
+        0.152,
+        0.1545,
+        0.1569,
+        0.1548,
+        0.1537,
+        0.155,
+        0.1542,
+        0.1558,
+        0.156,
+        0.154
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 88133585.05,
+      "net_worth_gini": 0.2821,
+      "net_worth_mean": 1175114.47,
+      "wellbeing": 0.8501,
+      "child_count": 0,
+      "family_gini": 0.0
+    },
+    {
+      "name": "Nordic",
+      "wealth": 507995236.1837809,
+      "gini": 0.1432,
+      "w_mean": 1238853.06,
+      "w_min": 800152.95,
+      "w_max": 1823117.78,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1865,
+        0.1663,
+        0.1668,
+        0.1691,
+        0.169,
+        0.1694,
+        0.1714,
+        0.1711,
+        0.1738,
+        0.1747,
+        0.1757,
+        0.1771
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 81614415.67,
+      "net_worth_gini": 0.2522,
+      "net_worth_mean": 1088192.21,
+      "wellbeing": 0.8482,
+      "child_count": 0,
+      "family_gini": 0.0
+    }
+  ],
+  "Singapore": [
+    {
+      "name": "Singapore",
+      "wealth": 507392850.5933933,
+      "gini": 0.0945,
+      "w_mean": 2305407.86,
+      "w_min": 1594826.28,
+      "w_max": 3072763.17,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1312,
+        0.1188,
+        0.1241,
+        0.1257,
+        0.1266,
+        0.1281,
+        0.1301,
+        0.1314,
+        0.1317,
+        0.1316,
+        0.1316,
+        0.1323
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 141761304.17,
+      "net_worth_gini": 0.2753,
+      "net_worth_mean": 1890150.72,
+      "wellbeing": 0.898,
+      "child_count": 0,
+      "family_gini": 0.0
+    },
+    {
+      "name": "Singapore",
+      "wealth": 507995236.1838355,
+      "gini": 0.1129,
+      "w_mean": 2103753.16,
+      "w_min": 1524307.4,
+      "w_max": 2865866.27,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1559,
+        0.1459,
+        0.1544,
+        0.1541,
+        0.154,
+        0.1571,
+        0.1575,
+        0.1581,
+        0.1575,
+        0.157,
+        0.1571,
+        0.1575
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 129799737.31,
+      "net_worth_gini": 0.2609,
+      "net_worth_mean": 1730663.16,
+      "wellbeing": 0.8962,
+      "child_count": 0,
+      "family_gini": 0.0
+    }
+  ],
+  "Pure_Georgist": [
+    {
+      "name": "Pure_Georgist",
+      "wealth": 507392850.5933154,
+      "gini": 0.2318,
+      "w_mean": 1944100.74,
+      "w_min": 512482.08,
+      "w_max": 4825139.72,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1911,
+        0.2078,
+        0.2111,
+        0.2198,
+        0.2145,
+        0.2294,
+        0.2413,
+        0.2457,
+        0.2412,
+        0.2371,
+        0.2368,
+        0.2343
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 113479145.49,
+      "net_worth_gini": 0.4062,
+      "net_worth_mean": 1513055.27,
+      "wellbeing": 0.8873,
+      "child_count": 0,
+      "family_gini": 0.0
+    },
+    {
+      "name": "Pure_Georgist",
+      "wealth": 507995236.18383914,
+      "gini": 0.2441,
+      "w_mean": 1774056.13,
+      "w_min": 707458.43,
+      "w_max": 3830462.67,
+      "div": 46.39,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1927,
+        0.1967,
+        0.2177,
+        0.2319,
+        0.2379,
+        0.2344,
+        0.2373,
+        0.2359,
+        0.2397,
+        0.2426,
+        0.2476,
+        0.2474
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 103774854.37,
+      "net_worth_gini": 0.3939,
+      "net_worth_mean": 1383664.72,
+      "wellbeing": 0.8861,
+      "child_count": 0,
+      "family_gini": 0.0
+    }
+  ],
+  "Mutualist_LS": [
+    {
+      "name": "Mutualist_LS",
+      "wealth": 507392850.5932974,
+      "gini": 0.235,
+      "w_mean": 1901134.18,
+      "w_min": 355540.98,
+      "w_max": 4565652.02,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1804,
+        0.2078,
+        0.2172,
+        0.2277,
+        0.2364,
+        0.2399,
+        0.2375,
+        0.2385,
+        0.2435,
+        0.2403,
+        0.2368,
+        0.2361
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 111085723.19,
+      "net_worth_gini": 0.4077,
+      "net_worth_mean": 1481142.98,
+      "wellbeing": 0.887,
+      "child_count": 0,
+      "family_gini": 0.0
+    },
+    {
+      "name": "Mutualist_LS",
+      "wealth": 507995236.18366,
+      "gini": 0.2349,
+      "w_mean": 1763155.29,
+      "w_min": 728600.85,
+      "w_max": 3770959.17,
+      "div": 41.74,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1873,
+        0.2109,
+        0.2159,
+        0.2251,
+        0.2279,
+        0.2308,
+        0.2362,
+        0.2386,
+        0.2408,
+        0.244,
+        0.2433,
+        0.2451
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 102893657.96,
+      "net_worth_gini": 0.3911,
+      "net_worth_mean": 1371915.44,
+      "wellbeing": 0.887,
+      "child_count": 0,
+      "family_gini": 0.0
+    }
+  ],
+  "Laissez_Faire": [
+    {
+      "name": "Laissez_Faire",
+      "wealth": 507392850.59326684,
+      "gini": 0.1015,
+      "w_mean": 1880282.2,
+      "w_min": 1124105.3,
+      "w_max": 2653546.06,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1667,
+        0.1566,
+        0.1639,
+        0.1685,
+        0.1707,
+        0.1708,
+        0.1719,
+        0.1749,
+        0.1764,
+        0.1774,
+        0.1767,
+        0.1769
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 113596312.0,
+      "net_worth_gini": 0.3146,
+      "net_worth_mean": 1514617.49,
+      "wellbeing": 0.9048,
+      "child_count": 0,
+      "family_gini": 0.0
+    },
+    {
+      "name": "Laissez_Faire",
+      "wealth": 507995236.1837771,
+      "gini": 0.1194,
+      "w_mean": 1713792.77,
+      "w_min": 1119550.45,
+      "w_max": 2351067.95,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1933,
+        0.1813,
+        0.1843,
+        0.1886,
+        0.1924,
+        0.195,
+        0.197,
+        0.1973,
+        0.1985,
+        0.2002,
+        0.2016,
+        0.2026
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 104135060.38,
+      "net_worth_gini": 0.294,
+      "net_worth_mean": 1388467.47,
+      "wellbeing": 0.9031,
+      "child_count": 0,
+      "family_gini": 0.0
+    }
+  ],
+  "Worker_Coop": [
+    {
+      "name": "Worker_Coop",
+      "wealth": 507392850.59330654,
+      "gini": 0.2092,
+      "w_mean": 1937950.87,
+      "w_min": 594338.76,
+      "w_max": 4440412.99,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1787,
+        0.2158,
+        0.2249,
+        0.2379,
+        0.2396,
+        0.2362,
+        0.2303,
+        0.2305,
+        0.233,
+        0.234,
+        0.2325,
+        0.2315
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 112661113.25,
+      "net_worth_gini": 0.3966,
+      "net_worth_mean": 1502148.18,
+      "wellbeing": 0.8896,
+      "child_count": 0,
+      "family_gini": 0.0
+    },
+    {
+      "name": "Worker_Coop",
+      "wealth": 507995236.18368894,
+      "gini": 0.2306,
+      "w_mean": 1722720.45,
+      "w_min": 698539.4,
+      "w_max": 3607225.63,
+      "div": 37.02,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.182,
+        0.2146,
+        0.2165,
+        0.2254,
+        0.2353,
+        0.2374,
+        0.2374,
+        0.2341,
+        0.2367,
+        0.245,
+        0.2475,
+        0.2492
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 100861651.11,
+      "net_worth_gini": 0.3864,
+      "net_worth_mean": 1344822.01,
+      "wellbeing": 0.8874,
+      "child_count": 0,
+      "family_gini": 0.0
+    }
+  ],
+  "UBI_VAT": [
+    {
+      "name": "UBI_VAT",
+      "wealth": 507392850.59336793,
+      "gini": 0.1471,
+      "w_mean": 1535837.69,
+      "w_min": 841692.98,
+      "w_max": 2322586.46,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1675,
+        0.1568,
+        0.1665,
+        0.1704,
+        0.1734,
+        0.1724,
+        0.1698,
+        0.1703,
+        0.1703,
+        0.1716,
+        0.1722,
+        0.1708
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 95785416.78,
+      "net_worth_gini": 0.3278,
+      "net_worth_mean": 1277138.89,
+      "wellbeing": 0.8703,
+      "child_count": 0,
+      "family_gini": 0.0
+    },
+    {
+      "name": "UBI_VAT",
+      "wealth": 507995236.1837855,
+      "gini": 0.1712,
+      "w_mean": 1413828.58,
+      "w_min": 840852.21,
+      "w_max": 2270390.56,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1892,
+        0.1795,
+        0.1836,
+        0.19,
+        0.1915,
+        0.1954,
+        0.1965,
+        0.196,
+        0.1972,
+        0.1973,
+        0.1989,
+        0.1998
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 88501496.29,
+      "net_worth_gini": 0.3056,
+      "net_worth_mean": 1180019.95,
+      "wellbeing": 0.8679,
+      "child_count": 0,
+      "family_gini": 0.0
+    }
+  ],
+  "Dual_Compact_LS": [
+    {
+      "name": "Dual_Compact_LS",
+      "wealth": 507392850.5933436,
+      "gini": 0.2225,
+      "w_mean": 1910207.62,
+      "w_min": 452188.97,
+      "w_max": 4326547.27,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1817,
+        0.1952,
+        0.2072,
+        0.2167,
+        0.2221,
+        0.2328,
+        0.2288,
+        0.2314,
+        0.2263,
+        0.2284,
+        0.2281,
+        0.2311
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 111261221.66,
+      "net_worth_gini": 0.4034,
+      "net_worth_mean": 1483482.96,
+      "wellbeing": 0.8882,
+      "child_count": 0,
+      "family_gini": 0.0
+    },
+    {
+      "name": "Dual_Compact_LS",
+      "wealth": 507995236.1838107,
+      "gini": 0.2198,
+      "w_mean": 1751721.97,
+      "w_min": 774491.19,
+      "w_max": 3604645.65,
+      "div": 41.75,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1834,
+        0.2025,
+        0.2161,
+        0.2251,
+        0.2323,
+        0.2345,
+        0.2401,
+        0.2371,
+        0.2374,
+        0.2417,
+        0.2445,
+        0.245
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 102026339.07,
+      "net_worth_gini": 0.384,
+      "net_worth_mean": 1360351.19,
+      "wellbeing": 0.8885,
+      "child_count": 0,
+      "family_gini": 0.0
+    }
+  ],
+  "Harberger_Georgist": [
+    {
+      "name": "Harberger_Georgist",
+      "wealth": 507392850.5933154,
+      "gini": 0.2318,
+      "w_mean": 1944100.74,
+      "w_min": 512482.08,
+      "w_max": 4825139.72,
+      "div": 0.0,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1911,
+        0.2078,
+        0.2111,
+        0.2198,
+        0.2145,
+        0.2294,
+        0.2413,
+        0.2457,
+        0.2412,
+        0.2371,
+        0.2368,
+        0.2343
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 113479145.49,
+      "net_worth_gini": 0.4062,
+      "net_worth_mean": 1513055.27,
+      "wellbeing": 0.8873,
+      "child_count": 0,
+      "family_gini": 0.0
+    },
+    {
+      "name": "Harberger_Georgist",
+      "wealth": 507995236.18383914,
+      "gini": 0.2441,
+      "w_mean": 1774056.13,
+      "w_min": 707458.43,
+      "w_max": 3830462.67,
+      "div": 46.39,
+      "txns": 0,
+      "steps": 480,
+      "gini_by_decade": [
+        0.1927,
+        0.1967,
+        0.2177,
+        0.2319,
+        0.2379,
+        0.2344,
+        0.2373,
+        0.2359,
+        0.2397,
+        0.2426,
+        0.2476,
+        0.2474
+      ],
+      "migration_count": 0,
+      "policy_path": {
+        "A": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        },
+        "B": {
+          "lvt_rate": [],
+          "dividend_rate": [],
+          "court_budget": []
+        }
+      },
+      "net_worth": 103774854.37,
+      "net_worth_gini": 0.3939,
+      "net_worth_mean": 1383664.72,
+      "wellbeing": 0.8861,
+      "child_count": 0,
+      "family_gini": 0.0
+    }
+  ]
+}

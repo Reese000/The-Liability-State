@@ -1,0 +1,16 @@
+{
+  "1980": {
+    "gini": 0.3273,
+    "actual": 0.33,
+    "err_pct": 0.82,
+    "delta": null,
+    "trend": "START"
+  },
+  "2020": {
+    "gini": 0.3259,
+    "actual": 0.33,
+    "err_pct": 1.24,
+    "delta": -0.0014,
+    "trend": "STABLE"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "UK": {
+    "full_gini_1960": 0.2689,
+    "full_gini_2020": 0.445,
+    "full_delta": 0.17610000000000003,
+    "no_skill_premium_growth": {
+      "gini_1960": 0.2419,
+      "gini_2020": 0.4081,
+      "delta": 0.16620000000000001,
+      "contribution": 0.00990000000000002
+    },
+    "no_union_coverage": {
+      "gini_1960": 0.279,
+      "gini_2020": 0.4486,
+      "delta": 0.16959999999999997,
+      "contribution": 0.006500000000000061
+    },
+    "no_capital_income_share": {
+      "gini_1960": 0.2668,
+      "gini_2020": 0.4376,
+      "delta": 0.1708,
+      "contribution": 0.005300000000000027
+    },
+    "no_import_competition": {
+      "gini_1960": 0.2716,
+      "gini_2020": 0.4213,
+      "delta": 0.1497,
+      "contribution": 0.026400000000000035
+    },
+    "no_import_displacement_rate": {
+      "gini_1960": 0.2717,
+      "gini_2020": 0.4216,
+      "delta": 0.14989999999999998,
+      "contribution": 0.026200000000000057
+    },
+    "no_use_progressive_tax": {
+      "gini_1960": 0.2851,
+      "gini_2020": 0.4705,
+      "delta": 0.18539999999999995,
+      "contribution": -0.00929999999999992
+    }
+  },
+  "France": {
+    "full_gini_1960": 0.348,
+    "full_gini_2020": 0.3086,
+    "full_delta": -0.03939999999999999,
+    "no_skill_premium_growth": {
+      "gini_1960": 0.3456,
+      "gini_2020": 0.2879,
+      "delta": -0.05770000000000003,
+      "contribution": 0.01830000000000004
+    },
+    "no_union_coverage": {
+      "gini_1960": 0.3527,
+      "gini_2020": 0.3134,
+      "delta": -0.0393,
+      "contribution": -9.999999999998899e-05
+    },
+    "no_capital_income_share": {
+      "gini_1960": 0.3468,
+      "gini_2020": 0.3001,
+      "delta": -0.04670000000000002,
+      "contribution": 0.007300000000000029
+    },
+    "no_import_competition": {
+      "gini_1960": 0.3507,
+      "gini_2020": 0.2972,
+      "delta": -0.05349999999999999,
+      "contribution": 0.014100000000000001
+    },
+    "no_import_displacement_rate": {
+      "gini_1960": 0.3508,
+      "gini_2020": 0.2976,
+      "delta": -0.053200000000000025,
+      "contribution": 0.013800000000000034
+    },
+    "no_use_progressive_tax": {
+      "gini_1960": 0.3626,
+      "gini_2020": 0.2525,
+      "delta": -0.11009999999999998,
+      "contribution": 0.07069999999999999
+    }
+  }
+}

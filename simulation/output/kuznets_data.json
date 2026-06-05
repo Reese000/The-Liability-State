@@ -1,0 +1,506 @@
+[
+  {
+    "phase": "Phase4",
+    "system": "LS_Full",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0544
+  },
+  {
+    "phase": "Phase4",
+    "system": "LS_Full",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.1551
+  },
+  {
+    "phase": "Phase4",
+    "system": "LS_Full",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.2462
+  },
+  {
+    "phase": "Phase4",
+    "system": "US_Style",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0467
+  },
+  {
+    "phase": "Phase4",
+    "system": "US_Style",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.1258
+  },
+  {
+    "phase": "Phase4",
+    "system": "US_Style",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.1997
+  },
+  {
+    "phase": "Phase4",
+    "system": "Nordic",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0429
+  },
+  {
+    "phase": "Phase4",
+    "system": "Nordic",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.1195
+  },
+  {
+    "phase": "Phase4",
+    "system": "Nordic",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.1918
+  },
+  {
+    "phase": "Phase4",
+    "system": "Singapore",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0376
+  },
+  {
+    "phase": "Phase4",
+    "system": "Singapore",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.0918
+  },
+  {
+    "phase": "Phase4",
+    "system": "Singapore",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.1393
+  },
+  {
+    "phase": "Phase4",
+    "system": "Pure_Georgist",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0592
+  },
+  {
+    "phase": "Phase4",
+    "system": "Pure_Georgist",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.1715
+  },
+  {
+    "phase": "Phase4",
+    "system": "Pure_Georgist",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.2696
+  },
+  {
+    "phase": "Phase4",
+    "system": "Mutualist_LS",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0537
+  },
+  {
+    "phase": "Phase4",
+    "system": "Mutualist_LS",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.1607
+  },
+  {
+    "phase": "Phase4",
+    "system": "Mutualist_LS",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.2571
+  },
+  {
+    "phase": "Phase4",
+    "system": "Laissez_Faire",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0637
+  },
+  {
+    "phase": "Phase4",
+    "system": "Laissez_Faire",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.1073
+  },
+  {
+    "phase": "Phase4",
+    "system": "Laissez_Faire",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.1443
+  },
+  {
+    "phase": "Phase4",
+    "system": "Worker_Coop",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0556
+  },
+  {
+    "phase": "Phase4",
+    "system": "Worker_Coop",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.1586
+  },
+  {
+    "phase": "Phase4",
+    "system": "Worker_Coop",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.2509
+  },
+  {
+    "phase": "Phase4",
+    "system": "UBI_VAT",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0499
+  },
+  {
+    "phase": "Phase4",
+    "system": "UBI_VAT",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.1428
+  },
+  {
+    "phase": "Phase4",
+    "system": "UBI_VAT",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.2305
+  },
+  {
+    "phase": "Phase4",
+    "system": "Dual_Compact_LS",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0544
+  },
+  {
+    "phase": "Phase4",
+    "system": "Dual_Compact_LS",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.1551
+  },
+  {
+    "phase": "Phase4",
+    "system": "Dual_Compact_LS",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.2462
+  },
+  {
+    "phase": "Phase5",
+    "system": "LS_Full",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.1335
+  },
+  {
+    "phase": "Phase5",
+    "system": "LS_Full",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.2769
+  },
+  {
+    "phase": "Phase5",
+    "system": "LS_Full",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.3472
+  },
+  {
+    "phase": "Phase5",
+    "system": "US_Style",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0467
+  },
+  {
+    "phase": "Phase5",
+    "system": "US_Style",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.1258
+  },
+  {
+    "phase": "Phase5",
+    "system": "US_Style",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.1986
+  },
+  {
+    "phase": "Phase5",
+    "system": "Nordic",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0429
+  },
+  {
+    "phase": "Phase5",
+    "system": "Nordic",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.1195
+  },
+  {
+    "phase": "Phase5",
+    "system": "Nordic",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.1918
+  },
+  {
+    "phase": "Phase5",
+    "system": "Singapore",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0376
+  },
+  {
+    "phase": "Phase5",
+    "system": "Singapore",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.0918
+  },
+  {
+    "phase": "Phase5",
+    "system": "Singapore",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.1393
+  },
+  {
+    "phase": "Phase5",
+    "system": "Pure_Georgist",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.1378
+  },
+  {
+    "phase": "Phase5",
+    "system": "Pure_Georgist",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.2962
+  },
+  {
+    "phase": "Phase5",
+    "system": "Pure_Georgist",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.3853
+  },
+  {
+    "phase": "Phase5",
+    "system": "Mutualist_LS",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.1347
+  },
+  {
+    "phase": "Phase5",
+    "system": "Mutualist_LS",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.2884
+  },
+  {
+    "phase": "Phase5",
+    "system": "Mutualist_LS",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.3708
+  },
+  {
+    "phase": "Phase5",
+    "system": "Laissez_Faire",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0637
+  },
+  {
+    "phase": "Phase5",
+    "system": "Laissez_Faire",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.1073
+  },
+  {
+    "phase": "Phase5",
+    "system": "Laissez_Faire",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.1443
+  },
+  {
+    "phase": "Phase5",
+    "system": "Worker_Coop",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.1325
+  },
+  {
+    "phase": "Phase5",
+    "system": "Worker_Coop",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.278
+  },
+  {
+    "phase": "Phase5",
+    "system": "Worker_Coop",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.3556
+  },
+  {
+    "phase": "Phase5",
+    "system": "UBI_VAT",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.0499
+  },
+  {
+    "phase": "Phase5",
+    "system": "UBI_VAT",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.1428
+  },
+  {
+    "phase": "Phase5",
+    "system": "UBI_VAT",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.2305
+  },
+  {
+    "phase": "Phase5",
+    "system": "Dual_Compact_LS",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.1335
+  },
+  {
+    "phase": "Phase5",
+    "system": "Dual_Compact_LS",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.2769
+  },
+  {
+    "phase": "Phase5",
+    "system": "Dual_Compact_LS",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.3472
+  },
+  {
+    "phase": "Phase5",
+    "system": "Harberger_Georgist",
+    "inequality": "low",
+    "inequality_desc": "Low (Narrow Uniform)",
+    "initial_gini": 0.1682,
+    "final_gini": 0.1378
+  },
+  {
+    "phase": "Phase5",
+    "system": "Harberger_Georgist",
+    "inequality": "mid",
+    "inequality_desc": "Mid (Default)",
+    "initial_gini": 0.2958,
+    "final_gini": 0.2962
+  },
+  {
+    "phase": "Phase5",
+    "system": "Harberger_Georgist",
+    "inequality": "high",
+    "inequality_desc": "High (Log-normal)",
+    "initial_gini": 0.3936,
+    "final_gini": 0.3853
+  }
+]

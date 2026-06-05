@@ -1,0 +1,301 @@
+{
+  "critic1_uk_fixed": {
+    "periods": [
+      {
+        "period": "1960s",
+        "gini": 0.2135,
+        "actual": 0.28
+      },
+      {
+        "period": "1980s",
+        "gini": 0.2415,
+        "actual": 0.33
+      },
+      {
+        "period": "2000s",
+        "gini": 0.2583,
+        "actual": 0.44
+      },
+      {
+        "period": "2020s",
+        "gini": 0.2754,
+        "actual": 0.42
+      }
+    ],
+    "trend_match": true,
+    "sim_trend": "RISING",
+    "actual_trend": "RISING"
+  },
+  "critic2_de_fixed": {
+    "periods": [
+      {
+        "period": "1960s",
+        "gini": 0.1955,
+        "actual": 0.3
+      },
+      {
+        "period": "1980s",
+        "gini": 0.2065,
+        "actual": 0.28
+      },
+      {
+        "period": "2000s",
+        "gini": 0.1662,
+        "actual": 0.35
+      },
+      {
+        "period": "2020s",
+        "gini": 0.2206,
+        "actual": 0.3
+      }
+    ],
+    "trend_match": false,
+    "sim_trend": "RISING",
+    "actual_trend": "STABLE"
+  },
+  "critic3_money_creation": {
+    "closed": {
+      "wealth": 507568627.51838166,
+      "gini": 0.1774
+    },
+    "money_only": {
+      "wealth": 517821978.1965844,
+      "gini": 0.1774
+    },
+    "money_bank": {
+      "wealth": 517849611.9339713,
+      "gini": 0.172
+    },
+    "money_high": {
+      "wealth": 533748006.2889937,
+      "gini": 0.1765
+    },
+    "delta_pct_bank": 2.025535830663072,
+    "delta_pct_high": 5.157800807864943
+  },
+  "critic4_japan": {
+    "periods": [
+      {
+        "period": "1960s",
+        "gini": 0.1746,
+        "actual": 0.35
+      },
+      {
+        "period": "1980s",
+        "gini": 0.1882,
+        "actual": 0.36
+      },
+      {
+        "period": "2000s",
+        "gini": 0.1933,
+        "actual": 0.39
+      },
+      {
+        "period": "2020s",
+        "gini": 0.2054,
+        "actual": 0.4
+      }
+    ],
+    "trend_match": true,
+    "sim_trend": "RISING",
+    "actual_trend": "RISING",
+    "mean_delta": -0.18462499999999998
+  },
+  "critic4_brazil": {
+    "periods": [
+      {
+        "period": "1960s",
+        "gini": 0.2131,
+        "actual": 0.57
+      },
+      {
+        "period": "1980s",
+        "gini": 0.2265,
+        "actual": 0.6
+      },
+      {
+        "period": "2000s",
+        "gini": 0.2117,
+        "actual": 0.57
+      },
+      {
+        "period": "2020s",
+        "gini": 0.2345,
+        "actual": 0.53
+      }
+    ],
+    "trend_match": false,
+    "sim_trend": "RISING",
+    "actual_trend": "FALLING",
+    "mean_delta": -0.34604999999999997
+  },
+  "critic4_france": {
+    "periods": [
+      {
+        "period": "1960s",
+        "gini": 0.174,
+        "actual": 0.35
+      },
+      {
+        "period": "1980s",
+        "gini": 0.1706,
+        "actual": 0.3
+      },
+      {
+        "period": "2000s",
+        "gini": 0.1718,
+        "actual": 0.29
+      },
+      {
+        "period": "2020s",
+        "gini": 0.1749,
+        "actual": 0.3
+      }
+    ],
+    "trend_match": false,
+    "sim_trend": "STABLE",
+    "actual_trend": "FALLING",
+    "mean_delta": -0.137175
+  },
+  "critic5_leave_one_out": {
+    "all_on_final_gini": 0.2294,
+    "all_on_gini_rise": -0.003500000000000003,
+    "decomposition": {
+      "skill_premium_growth": {
+        "name": "A: SBTC",
+        "final_gini": 0.1747,
+        "gini_rise": -0.001799999999999996,
+        "contribution": -0.001700000000000007,
+        "contribution_pct": 0
+      },
+      "union_coverage": {
+        "name": "B: Union Decline",
+        "final_gini": 0.2325,
+        "gini_rise": -0.0034999999999999754,
+        "contribution": -2.7755575615628914e-17,
+        "contribution_pct": 0
+      },
+      "capital_income_share": {
+        "name": "C: Financialization",
+        "final_gini": 0.2294,
+        "gini_rise": -0.003500000000000003,
+        "contribution": 0.0,
+        "contribution_pct": 0
+      },
+      "import_competition": {
+        "name": "D: Import Competition",
+        "final_gini": 0.229,
+        "gini_rise": -0.003500000000000003,
+        "contribution": 0.0,
+        "contribution_pct": 0
+      },
+      "use_progressive_tax": {
+        "name": "E: Progressive Tax",
+        "final_gini": 0.2416,
+        "gini_rise": -0.003899999999999987,
+        "contribution": 0.0003999999999999837,
+        "contribution_pct": 0
+      }
+    }
+  },
+  "critic6_cross_system": {
+    "LS_Full": {
+      "mean_wealth": 2154216.5,
+      "gini": 0.2478,
+      "crra": 1708.9376,
+      "wealth": 507568627.51836884
+    },
+    "US_Style": {
+      "mean_wealth": 1831739.46,
+      "gini": 0.2414,
+      "crra": 1701.4675,
+      "wealth": 507568627.5184115
+    },
+    "Nordic": {
+      "mean_wealth": 1810913.33,
+      "gini": 0.194,
+      "crra": 1708.6019,
+      "wealth": 507568627.5183372
+    },
+    "Singapore": {
+      "mean_wealth": 2625205.78,
+      "gini": 0.1842,
+      "crra": 1708.7401,
+      "wealth": 507568627.51834035
+    },
+    "Pure_Georgist": {
+      "mean_wealth": 2181926.98,
+      "gini": 0.2498,
+      "crra": 1712.833,
+      "wealth": 507568627.518365
+    },
+    "Mutualist_LS": {
+      "mean_wealth": 2164520.97,
+      "gini": 0.2495,
+      "crra": 1710.7612,
+      "wealth": 507568627.5183345
+    },
+    "Laissez_Faire": {
+      "mean_wealth": 2860469.35,
+      "gini": 0.202,
+      "crra": 1799.7226,
+      "wealth": 507568627.51840323
+    },
+    "Worker_Coop": {
+      "mean_wealth": 2144233.06,
+      "gini": 0.2496,
+      "crra": 1708.923,
+      "wealth": 507568627.5184164
+    },
+    "UBI_VAT": {
+      "mean_wealth": 1751881.85,
+      "gini": 0.2323,
+      "crra": 1712.6928,
+      "wealth": 507568627.5183635
+    },
+    "Dual_Compact_LS": {
+      "mean_wealth": 2505065.81,
+      "gini": 0.1652,
+      "crra": 1785.3376,
+      "wealth": 507568627.51832736
+    }
+  },
+  "summary": [
+    {
+      "system": "US (all mech ON)",
+      "sim_gini_2020": 0.2294,
+      "actual": 0.48,
+      "status": "\u274c FAIL"
+    },
+    {
+      "system": "UK (fixed HW+FS)",
+      "sim_gini_2020": 0.2754,
+      "actual": 0.42,
+      "status": "\u2705 MATCH"
+    },
+    {
+      "system": "Germany (fixed)",
+      "sim_gini_2020": 0.2206,
+      "actual": 0.3,
+      "status": "\u274c FAIL"
+    },
+    {
+      "system": "Japan",
+      "sim_gini_2020": 0.2054,
+      "actual": 0.4,
+      "status": "\u2705 MATCH"
+    },
+    {
+      "system": "Brazil",
+      "sim_gini_2020": 0.2345,
+      "actual": 0.53,
+      "status": "\u274c FAIL"
+    },
+    {
+      "system": "France",
+      "sim_gini_2020": 0.1749,
+      "actual": 0.3,
+      "status": "\u274c FAIL"
+    }
+  ]
+}

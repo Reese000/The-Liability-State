@@ -1,0 +1,552 @@
+{
+  "Phase0_LS_Baseline": [
+    {
+      "name": "Phase0_LS_Baseline",
+      "wealth": 505992915.0689321,
+      "gini": 0.1848,
+      "w_mean": 1916781.41,
+      "w_min": 777553.96,
+      "w_max": 2995602.28,
+      "div": 300.8,
+      "txns": 77280,
+      "steps": 480,
+      "config": {
+        "system_name": "Phase0_LS_Baseline",
+        "use_adversarial": false,
+        "use_pooled_insurance": false,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03,
+        "income_tax_rate": 0.0,
+        "corp_tax_rate": 0.0
+      }
+    },
+    {
+      "name": "Phase0_LS_Baseline",
+      "wealth": 505863087.0918432,
+      "gini": 0.2072,
+      "w_mean": 1720099.14,
+      "w_min": 761499.63,
+      "w_max": 2885094.29,
+      "div": 289.19,
+      "txns": 77261,
+      "steps": 480,
+      "config": {
+        "system_name": "Phase0_LS_Baseline",
+        "use_adversarial": false,
+        "use_pooled_insurance": false,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03,
+        "income_tax_rate": 0.0,
+        "corp_tax_rate": 0.0
+      }
+    },
+    {
+      "name": "Phase0_LS_Baseline",
+      "wealth": 506059766.7323365,
+      "gini": 0.1999,
+      "w_mean": 1804724.58,
+      "w_min": 838194.55,
+      "w_max": 2879791.15,
+      "div": 278.3,
+      "txns": 76907,
+      "steps": 480,
+      "config": {
+        "system_name": "Phase0_LS_Baseline",
+        "use_adversarial": false,
+        "use_pooled_insurance": false,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03,
+        "income_tax_rate": 0.0,
+        "corp_tax_rate": 0.0
+      }
+    },
+    {
+      "name": "Phase0_LS_Baseline",
+      "wealth": 506666009.79729706,
+      "gini": 0.1963,
+      "w_mean": 1910984.42,
+      "w_min": 836373.45,
+      "w_max": 2954435.82,
+      "div": 334.76,
+      "txns": 77280,
+      "steps": 480,
+      "config": {
+        "system_name": "Phase0_LS_Baseline",
+        "use_adversarial": false,
+        "use_pooled_insurance": false,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03,
+        "income_tax_rate": 0.0,
+        "corp_tax_rate": 0.0
+      }
+    },
+    {
+      "name": "Phase0_LS_Baseline",
+      "wealth": 506574864.5947197,
+      "gini": 0.1784,
+      "w_mean": 1941973.59,
+      "w_min": 891649.63,
+      "w_max": 3027923.02,
+      "div": 265.92,
+      "txns": 76948,
+      "steps": 480,
+      "config": {
+        "system_name": "Phase0_LS_Baseline",
+        "use_adversarial": false,
+        "use_pooled_insurance": false,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03,
+        "income_tax_rate": 0.0,
+        "corp_tax_rate": 0.0
+      }
+    }
+  ],
+  "LS_Adversarial": [
+    {
+      "name": "LS_Adversarial",
+      "wealth": 505992915.0689321,
+      "gini": 0.1848,
+      "w_mean": 1916781.41,
+      "w_min": 777553.96,
+      "w_max": 2995602.28,
+      "div": 300.8,
+      "txns": 77280,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_Adversarial",
+        "use_adversarial": true,
+        "use_pooled_insurance": false,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    },
+    {
+      "name": "LS_Adversarial",
+      "wealth": 505863087.0918432,
+      "gini": 0.2072,
+      "w_mean": 1720099.14,
+      "w_min": 761499.63,
+      "w_max": 2885094.29,
+      "div": 289.19,
+      "txns": 77261,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_Adversarial",
+        "use_adversarial": true,
+        "use_pooled_insurance": false,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    },
+    {
+      "name": "LS_Adversarial",
+      "wealth": 506059766.7323365,
+      "gini": 0.1999,
+      "w_mean": 1804724.58,
+      "w_min": 838194.55,
+      "w_max": 2879791.15,
+      "div": 278.3,
+      "txns": 76907,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_Adversarial",
+        "use_adversarial": true,
+        "use_pooled_insurance": false,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    },
+    {
+      "name": "LS_Adversarial",
+      "wealth": 506666009.79729706,
+      "gini": 0.1963,
+      "w_mean": 1910984.42,
+      "w_min": 836373.45,
+      "w_max": 2954435.82,
+      "div": 334.76,
+      "txns": 77280,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_Adversarial",
+        "use_adversarial": true,
+        "use_pooled_insurance": false,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    },
+    {
+      "name": "LS_Adversarial",
+      "wealth": 506574864.5947197,
+      "gini": 0.1784,
+      "w_mean": 1941973.59,
+      "w_min": 891649.63,
+      "w_max": 3027923.02,
+      "div": 265.92,
+      "txns": 76948,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_Adversarial",
+        "use_adversarial": true,
+        "use_pooled_insurance": false,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    }
+  ],
+  "LS_PooledIns": [
+    {
+      "name": "LS_PooledIns",
+      "wealth": 505092915.0689278,
+      "gini": 0.185,
+      "w_mean": 1916214.5,
+      "w_min": 777318.53,
+      "w_max": 3009105.47,
+      "div": 300.8,
+      "txns": 77330,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_PooledIns",
+        "use_adversarial": true,
+        "use_pooled_insurance": true,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    },
+    {
+      "name": "LS_PooledIns",
+      "wealth": 504963087.0918395,
+      "gini": 0.2072,
+      "w_mean": 1719592.1,
+      "w_min": 761289.59,
+      "w_max": 2885744.01,
+      "div": 289.19,
+      "txns": 77311,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_PooledIns",
+        "use_adversarial": true,
+        "use_pooled_insurance": true,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    },
+    {
+      "name": "LS_PooledIns",
+      "wealth": 505159766.73233753,
+      "gini": 0.2002,
+      "w_mean": 1804732.37,
+      "w_min": 838386.14,
+      "w_max": 2892989.24,
+      "div": 278.3,
+      "txns": 76957,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_PooledIns",
+        "use_adversarial": true,
+        "use_pooled_insurance": true,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    },
+    {
+      "name": "LS_PooledIns",
+      "wealth": 505766009.797292,
+      "gini": 0.1964,
+      "w_mean": 1910179.47,
+      "w_min": 834326.46,
+      "w_max": 2950303.66,
+      "div": 334.76,
+      "txns": 77330,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_PooledIns",
+        "use_adversarial": true,
+        "use_pooled_insurance": true,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    },
+    {
+      "name": "LS_PooledIns",
+      "wealth": 505674864.5947221,
+      "gini": 0.1784,
+      "w_mean": 1940835.85,
+      "w_min": 890398.22,
+      "w_max": 3023361.24,
+      "div": 265.92,
+      "txns": 76998,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_PooledIns",
+        "use_adversarial": true,
+        "use_pooled_insurance": true,
+        "use_events": false,
+        "use_compacts": false,
+        "use_endogenous_tfp": false,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    }
+  ],
+  "LS_Full": [
+    {
+      "name": "LS_Full",
+      "wealth": 505092915.06892216,
+      "gini": 0.1882,
+      "w_mean": 1896023.36,
+      "w_min": 764247.34,
+      "w_max": 2999952.9,
+      "div": 313.36,
+      "txns": 77330,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_Full",
+        "use_adversarial": true,
+        "use_pooled_insurance": true,
+        "use_events": true,
+        "use_compacts": true,
+        "use_endogenous_tfp": true,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    },
+    {
+      "name": "LS_Full",
+      "wealth": 504963087.0918423,
+      "gini": 0.2084,
+      "w_mean": 1700276.5,
+      "w_min": 761854.76,
+      "w_max": 2835437.43,
+      "div": 283.4,
+      "txns": 77330,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_Full",
+        "use_adversarial": true,
+        "use_pooled_insurance": true,
+        "use_events": true,
+        "use_compacts": true,
+        "use_endogenous_tfp": true,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    },
+    {
+      "name": "LS_Full",
+      "wealth": 505159766.7323372,
+      "gini": 0.2028,
+      "w_mean": 1785400.4,
+      "w_min": 828694.43,
+      "w_max": 2879102.48,
+      "div": 247.14,
+      "txns": 77044,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_Full",
+        "use_adversarial": true,
+        "use_pooled_insurance": true,
+        "use_events": true,
+        "use_compacts": true,
+        "use_endogenous_tfp": true,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    },
+    {
+      "name": "LS_Full",
+      "wealth": 505766009.79729867,
+      "gini": 0.1988,
+      "w_mean": 1888353.0,
+      "w_min": 809496.12,
+      "w_max": 2932492.61,
+      "div": 321.2,
+      "txns": 77330,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_Full",
+        "use_adversarial": true,
+        "use_pooled_insurance": true,
+        "use_events": true,
+        "use_compacts": true,
+        "use_endogenous_tfp": true,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    },
+    {
+      "name": "LS_Full",
+      "wealth": 505674864.5947246,
+      "gini": 0.179,
+      "w_mean": 1924023.42,
+      "w_min": 897354.94,
+      "w_max": 3029042.07,
+      "div": 298.75,
+      "txns": 76850,
+      "steps": 480,
+      "config": {
+        "system_name": "LS_Full",
+        "use_adversarial": true,
+        "use_pooled_insurance": true,
+        "use_events": true,
+        "use_compacts": true,
+        "use_endogenous_tfp": true,
+        "tax_type": "lvt",
+        "lvt_rate": 0.03
+      }
+    }
+  ],
+  "US_Adversarial": [
+    {
+      "name": "US_Adversarial",
+      "wealth": 505992915.0689278,
+      "gini": 0.1813,
+      "w_mean": 1853700.1,
+      "w_min": 767669.1,
+      "w_max": 2857214.99,
+      "div": 0.0,
+      "txns": 24000,
+      "steps": 480,
+      "config": {
+        "system_name": "US_Adversarial",
+        "use_adversarial": true,
+        "use_pooled_insurance": false,
+        "use_events": true,
+        "use_compacts": true,
+        "use_endogenous_tfp": true,
+        "tax_type": "income",
+        "income_tax_rate": 0.2,
+        "corp_tax_rate": 0.21
+      }
+    },
+    {
+      "name": "US_Adversarial",
+      "wealth": 505863087.09183955,
+      "gini": 0.2087,
+      "w_mean": 1660914.09,
+      "w_min": 759718.56,
+      "w_max": 2794934.47,
+      "div": 0.0,
+      "txns": 24000,
+      "steps": 480,
+      "config": {
+        "system_name": "US_Adversarial",
+        "use_adversarial": true,
+        "use_pooled_insurance": false,
+        "use_events": true,
+        "use_compacts": true,
+        "use_endogenous_tfp": true,
+        "tax_type": "income",
+        "income_tax_rate": 0.2,
+        "corp_tax_rate": 0.21
+      }
+    },
+    {
+      "name": "US_Adversarial",
+      "wealth": 506059766.73233855,
+      "gini": 0.2002,
+      "w_mean": 1741906.05,
+      "w_min": 765563.69,
+      "w_max": 2818629.6,
+      "div": 0.0,
+      "txns": 24000,
+      "steps": 480,
+      "config": {
+        "system_name": "US_Adversarial",
+        "use_adversarial": true,
+        "use_pooled_insurance": false,
+        "use_events": true,
+        "use_compacts": true,
+        "use_endogenous_tfp": true,
+        "tax_type": "income",
+        "income_tax_rate": 0.2,
+        "corp_tax_rate": 0.21
+      }
+    },
+    {
+      "name": "US_Adversarial",
+      "wealth": 506666009.79729587,
+      "gini": 0.1963,
+      "w_mean": 1840155.44,
+      "w_min": 792885.49,
+      "w_max": 2853752.84,
+      "div": 0.0,
+      "txns": 24000,
+      "steps": 480,
+      "config": {
+        "system_name": "US_Adversarial",
+        "use_adversarial": true,
+        "use_pooled_insurance": false,
+        "use_events": true,
+        "use_compacts": true,
+        "use_endogenous_tfp": true,
+        "tax_type": "income",
+        "income_tax_rate": 0.2,
+        "corp_tax_rate": 0.21
+      }
+    },
+    {
+      "name": "US_Adversarial",
+      "wealth": 506574864.59472233,
+      "gini": 0.1828,
+      "w_mean": 1872709.0,
+      "w_min": 774659.4,
+      "w_max": 2852901.79,
+      "div": 0.0,
+      "txns": 24000,
+      "steps": 480,
+      "config": {
+        "system_name": "US_Adversarial",
+        "use_adversarial": true,
+        "use_pooled_insurance": false,
+        "use_events": true,
+        "use_compacts": true,
+        "use_endogenous_tfp": true,
+        "tax_type": "income",
+        "income_tax_rate": 0.2,
+        "corp_tax_rate": 0.21
+      }
+    }
+  ]
+}

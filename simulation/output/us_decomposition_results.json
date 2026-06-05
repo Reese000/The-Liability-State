@@ -1,0 +1,56 @@
+{
+  "full_model": {
+    "gini_1960": 0.3521,
+    "gini_2020": 0.4602,
+    "delta": 0.1081,
+    "trend": "RISING"
+  },
+  "no_skill_premium_growth": {
+    "gini_1960": 0.3442,
+    "gini_2020": 0.4303,
+    "delta": 0.0861,
+    "trend": "RISING",
+    "contribution": 0.022
+  },
+  "no_union_coverage": {
+    "gini_1960": 0.3591,
+    "gini_2020": 0.4618,
+    "delta": 0.1027,
+    "trend": "RISING",
+    "contribution": 0.0054
+  },
+  "no_capital_income_share": {
+    "gini_1960": 0.3508,
+    "gini_2020": 0.4525,
+    "delta": 0.1017,
+    "trend": "RISING",
+    "contribution": 0.0064
+  },
+  "no_import_competition": {
+    "gini_1960": 0.352,
+    "gini_2020": 0.4342,
+    "delta": 0.0822,
+    "trend": "RISING",
+    "contribution": 0.0259
+  },
+  "no_import_displacement_rate": {
+    "gini_1960": 0.3521,
+    "gini_2020": 0.4346,
+    "delta": 0.0825,
+    "trend": "RISING",
+    "contribution": 0.0256
+  },
+  "no_use_progressive_tax": {
+    "gini_1960": 0.374,
+    "gini_2020": 0.4871,
+    "delta": 0.1131,
+    "trend": "RISING",
+    "contribution": -0.005
+  },
+  "counterfactual_no_welfare": {
+    "delta": 0.1159
+  },
+  "counterfactual_low_inequality": {
+    "delta": 0.0533
+  }
+}
