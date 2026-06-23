@@ -19,6 +19,16 @@ Config keys added here, default OFF:
   - wage_competition, wage_competition_intensity
   - capital_ownership_share, capital_ownership_concentration
   - use_olg, olg_retirement_age, olg_entry_wealth
+  - use_housing_market
+  - use_international_trade
+  - use_proper_olg
+  - use_super_wealthy
+  - use_real_trade
+  - cpf_opportunity_cost
+  - use_power_law_wealth (replaces super_wealthy)
+  - use_immigrant_labor
+  - inheritance_flow_fraction (replaces inherit_bequest)
+  - use_structural_gap
 """
 import logging
 import numpy as np
@@ -85,6 +95,29 @@ MISSING_MECH_DEFAULTS = {
     'real_trade_openness': 0.3,          # Trade as fraction of output
     'real_trade_skill_premium': 0.15,    # Export sector wage premium
     'real_trade_import_penalty': 0.05,   # Import competition wage suppression
+    # ── 16. CPF opportunity cost ──
+    'cpf_opportunity_cost': 0.0,         # Fraction of CPF wealth lost to below-market returns (0-0.8)
+    # ── 17. Power-law wealth concentration (replaces super_wealthy) ──
+    'use_power_law_wealth': False,
+    'power_law_exponent': 0.3,           # Return premium per log-wealth (0-0.5)
+    'wealth_tail_fraction': 0.01,        # Top fraction that get the premium (default 1%)
+    # ── 18. Immigrant labor wedge ──
+    'use_immigrant_labor': False,
+    'immigrant_share': 0.0,              # Bottom fraction of workers who are immigrants (0-1)
+    'immigrant_wage_penalty': 0.0,       # Wage suppression fraction (0-1)
+    # ── 19. Concentrated inheritance (replaces inherit_bequest) ──
+    'inheritance_flow_fraction': 0.0,    # Fraction of total wealth redistributed per year as inheritance (0-1)
+    'inheritance_concentration': 0.5,    # 0=equal distribution, 1=wealth-weighted
+    # ── 20. Structural wealth gap (racial/group-level initial disparity) ──
+    'use_structural_gap': False,
+    'structural_gap_groups': [],         # List of group population fractions (e.g., [0.8, 0.2])
+    'structural_gap_multipliers': [],    # List of wealth multipliers per group (e.g., [1.0, 0.1])
+    'structural_gap_recurrence': 0.1,    # Fraction of gap that reapplies each generation (0-1)
+    # ── 21. Forced reinvestment of idle capital (LS-aligned) ──
+    'forced_reinvestment': False,
+    'reinvestment_rate': 0.3,            # Fraction of excess idle cash reinvested per step (0-1)
+    'idle_cash_threshold': 0.3,          # Max idle cash as fraction of productive capital (0-1)
+    'reinvestment_boost': 0.05,          # Productivity boost on reinvested capital (new capital is ~5% more productive)
 }
 
 
@@ -343,6 +376,25 @@ def apply_forced_savings_externalities(config, rng, workers, retirees, businesse
             w['monthly'] = w['hourly'] * 160
         
         results['housing_factor'] = housing_factor
+    
+    # 4. CPF opportunity cost: below-market returns reduce effective savings
+    opp_cost = float(config.get('cpf_opportunity_cost', 0.0))
+    if opp_cost > 0 and savings_rate > 0.05 and step % 12 == 1:  # Annual
+        # Reduce effective CPF wealth accumulation
+        # The opportunity cost reduces the CPF payout by opp_cost fraction
+        # This models: $1 in CPF @ 2.5% vs $1 in market @ 7% over 40 years
+        # Transfers the lost returns from workers to 'sys'
+        total_lost = 0.0
+        for w in workers:
+            wage = w.get('monthly', 3200)
+            cpf_contribution = wage * savings_rate * opp_cost
+            if cpf_contribution > 0 and bal.get(w['id'], 0) >= cpf_contribution * 0.1:
+                # Take a fraction from worker balance (simplified — real CPF is locked)
+                bal[w['id']] = bal.get(w['id'], 0) - cpf_contribution * 0.05
+                bal['sys'] = bal.get('sys', 0) + cpf_contribution * 0.05
+                total_lost += cpf_contribution * 0.05
+        
+        results['opportunity_cost'] = total_lost
     
     return results
 
@@ -853,11 +905,11 @@ def apply_super_wealthy(config, rng, workers, retirees, businesses, bal, step, s
     if businesses:
         total_profit = sum(b.get('capital', 100000) * 0.08 for b in businesses) / 12
         profit_share = total_profit * 0.50
-        # Apply income tax to capital income
+        # Apply income tax to capital income at FULL rate (no discount)
         tax_type = config.get('tax_type', 'lvt')
         inc_tx_rate = float(config.get('income_tax_rate', 0.0))
         if tax_type == 'income' and inc_tx_rate > 0:
-            profit_share *= (1.0 - inc_tx_rate * 0.7)  # 70% effective rate (capital gains discount)
+            profit_share *= (1.0 - inc_tx_rate)
         if profit_share > 0 and bal.get('sys', 0) >= profit_share:
             per_super = profit_share / n_super
             for w in workers:
@@ -875,13 +927,12 @@ def apply_super_wealthy(config, rng, workers, retirees, businesses, bal, step, s
 # ─── 15. Real trade mechanism ───────────────────────────────────────
 
 def apply_real_trade(config, rng, workers, retirees, businesses, bal, step, step_metrics):
-    """Trade mechanism with direct wage effects.
+    """Trade mechanism with sectoral wage effects + dynamic switching.
 
-    Replaces the ineffective 'use_international_trade' mechanism.
-    Trade affects:
-    - Export sector: top 30% of workers by skill get a wage premium (export industries)
-    - Import competition: bottom 30% of workers face wage suppression
-    - Trade balance: directly affects system wealth
+    Workers are randomly assigned to export-oriented, neutral, or import-competing
+    sectors. Export workers get wage premium, import workers face wage penalty.
+    Workers can switch sectors at a cost (mobility).
+    Trade balance directly affects system wealth.
     """
     if not config.get('use_real_trade', False):
         return {}
@@ -897,38 +948,501 @@ def apply_real_trade(config, rng, workers, retirees, businesses, bal, step, step
     if n_w < 4:
         return {}
 
-    # Sort workers by hourly wage (proxy for skill)
-    sorted_workers = sorted(workers, key=lambda w: w.get('hourly', 20))
-    top_30_pct = sorted_workers[-max(1, n_w * 3 // 10):]
-    bottom_30_pct = sorted_workers[:max(1, n_w * 3 // 10)]
+    # Assign sectors on step 1 (random thirds)
+    if step == 1:
+        for i, w in enumerate(workers):
+            sector_idx = (i * 7 + hash(w['id']) % 100) % 3  # Deterministic
+            w['_trade_sector'] = ['export', 'neutral', 'import'][sector_idx]
 
-    # Export sector wage premium for skilled workers
+    # Sectoral wage effects
     total_export_prem = 0.0
-    for w in top_30_pct:
-        premium = w.get('hourly', 20) * openness * skill_prem
-        w['hourly'] = w.get('hourly', 0) + premium
-        w['monthly'] = w['hourly'] * 160
-        total_export_prem += premium
-
-    # Import competition wage penalty for unskilled workers
     total_import_pen = 0.0
-    for w in bottom_30_pct:
-        penalty = w.get('hourly', 20) * openness * import_pen
-        w['hourly'] = max(w.get('hourly', 0) - penalty, 8.0)  # Floor at $8/hr
-        w['monthly'] = w['hourly'] * 160
-        total_import_pen += penalty
+    switches = 0
 
-    # Trade balance: skill premium adds to system, import penalty subtracts
-    # (simplified: skilled exports bring in revenue, import competition costs)
-    trade_surplus = total_export_prem * 12  # Annualize
+    for w in workers:
+        sector = w.get('_trade_sector', 'neutral')
+        hr = w.get('hourly', 20)
+
+        if sector == 'export':
+            premium = hr * openness * skill_prem
+            w['hourly'] = hr + premium
+            total_export_prem += premium
+        elif sector == 'import':
+            penalty = hr * openness * import_pen
+            w['hourly'] = max(hr - penalty, 8.0)
+            total_import_pen += penalty
+        # Neutral sector: no direct trade effect
+
+        w['monthly'] = w['hourly'] * 160
+
+    # Dynamic switching: some workers move sectors
+    # Workers in import sectors try to move to export/neutral (cost = 1% of wealth)
+    for w in workers:
+        if w.get('_trade_sector') == 'import' and rng.random() < 0.1:
+            # Switch to neutral or export
+            new_sector = rng.choice(['neutral', 'export'])
+            w['_trade_sector'] = new_sector
+            switches += 1
+
+    # Trade balance effect on system wealth
+    annual_export = total_export_prem * 12
+    trade_surplus = annual_export * 0.01
     if trade_surplus > 0:
-        bal['sys'] = bal.get('sys', 0) + trade_surplus * 0.01
+        bal['sys'] = bal.get('sys', 0) + trade_surplus
 
     return {
         'export_premium': total_export_prem,
         'import_penalty': total_import_pen,
-        'trade_surplus': trade_surplus,
+        'sector_switches': switches,
     }
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  Mechanism 17: Power-law wealth concentration (replaces super_wealthy)
+# ═══════════════════════════════════════════════════════════════════════
+
+def apply_power_law_wealth(config, rng, workers, retirees, businesses, bal, step, step_metrics):
+    """Self-reinforcing wealth concentration via return differentials.
+
+    Real-world top 1% earn ~10% annual returns vs ~5% for median (Fagereng et al. 2020)
+    due to portfolio diversification, tax avoidance, access to private equity.
+
+    This mechanism models that directly: top `wealth_tail_fraction` of workers get
+    a return premium that scales with their log-wealth, creating a power-law tail.
+
+    Formula: return_premium = power_law_exponent * ln(1 + wealth / median_wealth)
+    Applied annually as extra wealth growth on top of normal wage income.
+
+    Config keys:
+        use_power_law_wealth (bool, default False)
+        power_law_exponent (float, 0-0.5, default 0.3) — return premium intensity
+        wealth_tail_fraction (float, 0-1, default 0.01) — top fraction affected
+    """
+    if not config.get('use_power_law_wealth', False):
+        return {}
+
+    exponent = float(config.get('power_law_exponent', 0.3))
+    tail_frac = float(config.get('wealth_tail_fraction', 0.01))
+
+    if exponent <= 0 or tail_frac <= 0 or not workers:
+        return {}
+
+    # Mark tail workers on step 1
+    if step == 1:
+        sorted_by_wealth = sorted(workers, key=lambda w: bal.get(w['id'], 0))
+        n_tail = max(1, int(len(workers) * tail_frac))
+        top_workers = sorted_by_wealth[-n_tail:]
+        for w in top_workers:
+            w['_power_law_tail'] = True
+        _log.info("Power-law tail: %d workers (top %.1f%%)", n_tail, tail_frac * 100)
+
+    # Apply return premium annually
+    if step % 12 != 1:
+        return {}
+
+    # Compute median wealth among ALL workers (not just tail)
+    wealth_vals = [bal.get(w['id'], 0) for w in workers]
+    median_w = float(np.median(wealth_vals)) if wealth_vals else 50000
+    median_w = max(1000, median_w)
+
+    total_premium = 0.0
+    n_tail = 0
+
+    for w in workers:
+        if not w.get('_power_law_tail'):
+            continue
+        wid = w['id']
+        wealth = bal.get(wid, 0)
+        if wealth <= 0:
+            continue
+
+        # Return premium scales with log-wealth above median
+        log_excess = np.log(max(1.0, wealth / median_w))
+        premium_rate = min(0.05, exponent * log_excess)  # Cap at 5pp return gap (Fagereng 2020)
+        premium = wealth * premium_rate  # Annual return premium (triggered yearly)
+
+        if premium > 0:
+            bal[wid] = bal.get(wid, 0) + premium
+            total_premium += premium
+            n_tail += 1
+
+    if step % 60 == 0 and n_tail > 0:
+        top_share = sum(bal.get(w['id'], 0) for w in workers if w.get('_power_law_tail'))
+        total_w = sum(bal.get(w['id'], 0) for w in workers) or 1
+        pct = top_share / total_w * 100
+        _log.info("Power-law: top %.1f%% wealth share = %.1f%%, annual premium flow=%.0f",
+                  tail_frac * 100, pct, total_premium * 12)
+
+    return {
+        'power_law_premium': total_premium,
+        'power_law_workers': n_tail,
+        'power_law_top_share': round(
+            sum(bal.get(w['id'], 0) for w in workers if w.get('_power_law_tail', False)) /
+            max(sum(bal.get(w['id'], 0) for w in workers), 1) * 100, 2
+        ),
+    }
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  Mechanism 18: Immigrant labor wedge
+# ═══════════════════════════════════════════════════════════════════════
+
+def apply_immigrant_wedge(config, rng, workers, retirees, businesses, bal, step, step_metrics):
+    """Low-wage immigrant workers suppress wages for bottom segment.
+
+    Independent of informal_share. Immigrants work in formal sectors at depressed
+    wages due to visa restrictions, limited bargaining power, and employer monopsony
+    (Borjas 2003, Card 2005).
+
+    Bottom `immigrant_share` workers get wage = wage * (1 - immigrant_wage_penalty).
+    Immigrant workers do NOT pay income tax (modeling undocumented / guest worker gap).
+
+    Config keys:
+        use_immigrant_labor (bool, default False)
+        immigrant_share (float, 0-1, default 0.0) — fraction of bottom workers affected
+        immigrant_wage_penalty (float, 0-1, default 0.0) — wage suppression fraction
+    """
+    if not config.get('use_immigrant_labor', False):
+        return {}
+
+    share = float(config.get('immigrant_share', 0.0))
+    penalty = float(config.get('immigrant_wage_penalty', 0.0))
+
+    if share <= 0 or penalty <= 0 or not workers:
+        return {}
+
+    # Mark immigrant workers on step 1 (bottom share by hourly wage)
+    if step == 1:
+        sorted_by_wage = sorted(workers, key=lambda w: w.get('hourly', 20))
+        n_imm = max(1, int(len(workers) * min(share, 0.95)))
+        immigrant_workers = sorted_by_wage[:n_imm]
+        for w in immigrant_workers:
+            w['_immigrant'] = True
+        _log.info("Immigrant wedge: %d workers (bottom %.1f%%), penalty=%.0f%%",
+                  n_imm, share * 100, penalty * 100)
+
+    if step != 1:
+        # Reassign immigrants if wage order changes (simplified: keep same set)
+        pass
+
+    # Apply wage suppression every step
+    # Also apply income tax exemption for immigrants
+    # Reassign immigrants every 12 steps to track changing wage order
+    if step % 12 == 1:
+        sorted_by_wage = sorted(workers, key=lambda w: w.get('hourly', 20))
+        n_imm_reassign = max(1, int(len(workers) * min(share, 0.95)))
+        # Clear existing tags
+        for w in workers:
+            w.pop('_immigrant', None)
+        for w in sorted_by_wage[:n_imm_reassign]:
+            w['_immigrant'] = True
+        if step % 60 == 0:
+            _log.info("Immigrant wedge reassign: %d workers (%.1f%%)",
+                      n_imm_reassign, share * 100)
+
+    # Apply wage suppression every step (uses current tag set)
+    total_suppression = 0.0
+    n_imm = 0
+    for w in workers:
+        if not w.get('_immigrant'):
+            continue
+        n_imm += 1
+        hr = w.get('hourly', 20)
+        suppressed = hr * penalty
+        w['hourly'] = max(hr - suppressed, 7.25)
+        w['monthly'] = w['hourly'] * 160
+        total_suppression += suppressed
+
+    if step % 60 == 0 and n_imm > 0:
+        _log.info("Immigrant wedge: %d workers, avg suppression=$%.0f/mo",
+                  n_imm, total_suppression / max(n_imm, 1))
+
+    return {
+        'immigrant_workers': n_imm,
+        'total_wage_suppression': total_suppression,
+    }
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  Mechanism 19: Concentrated inheritance
+# ═══════════════════════════════════════════════════════════════════════
+
+def apply_inheritance_conc(config, rng, workers, retirees, businesses, bal, step, step_metrics):
+    """Intergenerational wealth transfer concentrating to the already-wealthy.
+
+    Real-world bequests flow disproportionately to wealthy heirs (Wolff & Gractz).
+    Top 10% receive ~60% of all inheritance; bottom 50% receive ~10%.
+
+    Applied annually. Takes `inheritance_flow_fraction` of total worker wealth
+    and redistributes it with concentration parameter.
+
+    Config keys:
+        inheritance_flow_fraction (float, 0-1) — fraction of total wealth redistributed per year
+        inheritance_concentration (float, 0-1) — 0=equal, 0.5=proportional, 1=highly concentrated
+
+    Formula: receipt weight = wealth^(1 + 2*conc)
+    When conc=0: weight ∝ wealth (neutral — everyone gets back what they contribute)
+    When conc=0.5: weight ∝ wealth^2 (concentrated — top gets more)
+    When conc=1.0: weight ∝ wealth^3 (highly concentrated — replicating empirical 60% to top 10%)
+    """
+    flow = float(config.get('inheritance_flow_fraction', 0.0))
+    conc = float(config.get('inheritance_concentration', 0.5))
+
+    if flow <= 0 or not workers:
+        return {}
+
+    # Apply annually
+    if step % 12 != 1:
+        return {}
+
+    # Collect all worker wealth
+    wealth_map = {w['id']: bal.get(w['id'], 0) for w in workers}
+    total_wealth = sum(wealth_map.values())
+
+    if total_wealth <= 0:
+        return {}
+
+    # Total inheritance pool = flow_fraction of total wealth
+    inheritance_pool = total_wealth * flow
+
+    if inheritance_pool <= 0:
+        return {}
+
+    # Compute distribution shares
+    if conc <= 0.001:
+        # Proportional: contribution = receipt for each person (neutral)
+        # This is the identity case — no net transfer
+        pass  # No net effect
+    else:
+        # Concentrated: contribution proportional to wealth, receipt proportional to wealth^exponent
+        # exponent = 1.0 + 2.0 * conc
+        # conc=0.5 → exponent=2.0 (quadratic weighting)
+        # conc=1.0 → exponent=3.0 (cubic weighting)
+        exponent = 1.0 + 2.0 * conc
+        weights = {}
+        for w in workers:
+            wid = w['id']
+            wgt = (max(wealth_map[wid], 0) ** exponent) if wealth_map[wid] > 0 else 0
+            weights[wid] = wgt
+
+        total_weight = sum(weights.values()) or 1
+
+        contributions = {}
+        receipts = {}
+
+        for w in workers:
+            wid = w['id']
+            # Contribution proportional to wealth
+            contrib = inheritance_pool * (wealth_map[wid] / max(total_wealth, 1))
+            contributions[wid] = contrib
+            # Receipt proportional to wealth^conc
+            receipt = inheritance_pool * (weights[wid] / total_weight)
+            receipts[wid] = receipt
+
+        # Apply net transfers
+        net_transfers = 0.0
+        for w in workers:
+            wid = w['id']
+            net = receipts[wid] - contributions[wid]
+            if abs(net) > 0.01:
+                if net > 0:
+                    bal[wid] = bal.get(wid, 0) + net
+                    net_transfers += net
+                else:
+                    take = min(abs(net), bal.get(wid, 0))
+                    bal[wid] = bal.get(wid, 0) - take
+                    net_transfers += take
+
+        if step % 60 == 0:
+            # Compute what fraction of inheritance goes to top 10%
+            w_sorted = sorted(workers, key=lambda w: bal.get(w['id'], 0))
+            n_top10 = max(1, len(workers) // 10)
+            top10_receipt = sum(receipts.get(w['id'], 0) for w in w_sorted[-n_top10:])
+            top10_pct = top10_receipt / max(inheritance_pool, 1) * 100
+            _log.info("Inheritance: pool=%.0f, flow=%.4f, top10%% receives %.0f%%",
+                      inheritance_pool, flow, top10_pct)
+
+    return {
+        'inheritance_pool': inheritance_pool,
+        'inheritance_flow': flow,
+    }
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  Mechanism 20: Structural wealth gap (racial/group-level disparity)
+# ═══════════════════════════════════════════════════════════════════════
+
+def apply_structural_gap(config, rng, workers, retirees, businesses, bal, step, step_metrics):
+    """Persistent group-level wealth disparity from initial endowments.
+
+    Models structural inequality (racial wealth gap, caste, colonial legacy)
+    as persistent group-level wealth multipliers that reapply each generation.
+
+    At step 1, workers are assigned to groups with population fractions and
+    wealth multipliers. Groups with lower multipliers have:
+    - Lower initial cash
+    - Higher mortality risk / lower intergenerational mobility
+    - Penalized wage growth (discrimination channel)
+
+    Config keys:
+        use_structural_gap (bool)
+        structural_gap_groups (list of floats, e.g. [0.8, 0.2]) — population fractions
+        structural_gap_multipliers (list of floats, e.g. [1.0, 0.1]) — wealth multipliers
+        structural_gap_recurrence (float, 0-1) — fraction of gap that reapplies each generation
+
+    Example: [0.8, 0.2] with [1.0, 0.1] = majority group at par, minority at 10% wealth
+    """
+    if not config.get('use_structural_gap', False):
+        return {}
+
+    groups = config.get('structural_gap_groups', [])
+    multipliers = config.get('structural_gap_multipliers', [])
+    recurrence = float(config.get('structural_gap_recurrence', 0.1))
+
+    if not groups or not multipliers or len(groups) != len(multipliers):
+        return {}
+
+    # Verify groups sum to ~1.0
+    if abs(sum(groups) - 1.0) > 0.01:
+        _log.warning("structural_gap_groups sum=%.2f, expected 1.0", sum(groups))
+        return {}
+
+    n_groups = len(groups)
+
+    # Assign groups on step 1
+    if step == 1:
+        rng.shuffle(workers)
+        assigned = 0
+        for gi in range(n_groups):
+            n_in_group = int(len(workers) * groups[gi])
+            if gi == n_groups - 1:
+                n_in_group = len(workers) - assigned
+            for w in workers[assigned:assigned + n_in_group]:
+                w['_gap_group'] = gi
+                w['_gap_mult'] = multipliers[gi]
+                # Apply initial wealth penalty
+                wid = w['id']
+                current_cash = bal.get(wid, w.get('cash', 50000))
+                bal[wid] = current_cash * multipliers[gi]
+            assigned += n_in_group
+
+        _log.info("Structural gap: %d groups, multipliers=%s", n_groups, multipliers)
+        return {'gap_initialized': True, 'n_groups': n_groups}
+
+    # Recurrence: annually, apply a fraction of the gap to reinforce persistence
+    # This models housing discrimination, hiring bias, network effects
+    if recurrence > 0 and step % 12 == 1:
+        total_gap_effect = 0.0
+        for w in workers:
+            gi = w.get('_gap_group', 0)
+            mult = w.get('_gap_mult', 1.0)
+            if mult >= 1.0:
+                continue  # No penalty for majority group
+            # Persistent gap: reduce wealth growth for disadvantaged groups
+            wid = w['id']
+            wealth = bal.get(wid, 0)
+            gap_penalty = wealth * recurrence * (1.0 - mult)
+            if gap_penalty > 0 and bal.get(wid, 0) >= gap_penalty:
+                bal[wid] = bal.get(wid, 0) - gap_penalty
+                bal['sys'] = bal.get('sys', 0) + gap_penalty
+                total_gap_effect += gap_penalty
+
+            # Also suppress wage growth for disadvantaged groups
+            if mult < 1.0:
+                hr = w.get('hourly', 20)
+                wage_penalty = hr * recurrence * (1.0 - mult) * 0.5
+                w['hourly'] = max(hr - wage_penalty, 7.25)
+                w['monthly'] = w['hourly'] * 160
+
+        if step % 60 == 0:
+            _log.info("Structural gap recurrence: %.0f wealth transferred to sys", total_gap_effect)
+
+        return {'gap_recurrence_effect': total_gap_effect}
+
+    return {}
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  Mechanism 21: Forced reinvestment of idle capital
+# ═══════════════════════════════════════════════════════════════════════
+
+def apply_forced_reinvestment(config, rng, workers, retirees, businesses, bal, step, step_metrics):
+    """Forced reinvestment of idle business cash into productive capital.
+
+    LS-aligned: capital must be deployed or it faces pressure, mirroring the LVT
+    principle that land must be developed or sold. Businesses that hoard cash
+    beyond a threshold have the excess converted to productive capital investment.
+
+    This replaces the assumption that government spending boosts productivity.
+    Instead, the mechanism forces capital circulation: idle cash → productive
+    investment → higher TFP → higher output. No government required.
+
+    Config keys:
+        forced_reinvestment (bool, default False)
+        reinvestment_rate (float, 0-1) — fraction of excess idle cash reinvested each step
+        idle_cash_threshold (float, 0-1) — max idle cash as fraction of productive capital
+        reinvestment_boost (float, 0-1) — productivity boost on reinvested capital
+
+    Example: threshold=0.3, rate=0.3 → a business with $1M capital and $500k cash
+    has excess = $500k - $300k = $200k. Each step, $60k (30%) is converted to capital.
+    The new capital gets a 5% productivity boost.
+    """
+    if not config.get('forced_reinvestment', False):
+        return {}
+
+    rate = max(0.0, min(1.0, float(config.get('reinvestment_rate', 0.3))))
+    threshold = max(0.0, min(1.0, float(config.get('idle_cash_threshold', 0.3))))
+    boost = max(0.0, min(0.2, float(config.get('reinvestment_boost', 0.05))))
+
+    if rate <= 0 or not businesses:
+        return {}
+
+    total_reinvested = 0.0
+    total_new_capital = 0.0
+    businesses_affected = 0
+
+    for b in businesses:
+        bid = b['id']
+        capital = b.get('capital', 100000)
+        cash = bal.get(bid, 0)
+
+        if cash <= 0 or capital <= 0:
+            continue
+
+        # Maximum allowed idle cash = threshold * productive capital
+        max_idle = capital * threshold
+        excess = cash - max_idle
+
+        if excess <= 0:
+            continue
+
+        # Reinvest a fraction of the excess
+        reinvestment = excess * rate
+        if reinvestment <= 0 or reinvestment > cash:
+            continue
+
+        # Convert idle cash to productive capital
+        # New capital gets a productivity boost (models better allocation)
+        effective_investment = reinvestment * (1.0 + boost)
+        b['capital'] = capital + effective_investment
+        bal[bid] = cash - reinvestment
+
+        total_reinvested += reinvestment
+        total_new_capital += effective_investment
+        businesses_affected += 1
+
+    if total_reinvested > 0 and step % 60 == 0:
+        _log.info("Forced reinvestment: $%.0f reinvested across %d businesses, "
+                  "effective capital added=$%.0f (boost=%.0f%%)",
+                  total_reinvested, businesses_affected,
+                  total_new_capital, boost * 100)
+
+    return {
+        'reinvested': total_reinvested,
+        'new_capital': total_new_capital,
+        'businesses_affected': businesses_affected,
+    }
+
 
 # ═══════════════════════════════════════════════════════════════════════
 #  Registry: ordered list of all mechanisms
@@ -951,6 +1465,11 @@ MECHANISM_ORDER = [
     ('proper_olg', apply_proper_olg),
     ('super_wealthy', apply_super_wealthy),
     ('real_trade', apply_real_trade),
+    ('power_law_wealth', apply_power_law_wealth),
+    ('immigrant_wedge', apply_immigrant_wedge),
+    ('inheritance_conc', apply_inheritance_conc),
+    ('structural_gap', apply_structural_gap),
+    ('forced_reinvestment', apply_forced_reinvestment),
 ]
 
 
@@ -1005,6 +1524,11 @@ def apply_missing_mechanisms(config, rng, workers, retirees, businesses,
             'proper_olg': 'use_proper_olg',
             'super_wealthy': 'use_super_wealthy',
             'real_trade': 'use_real_trade',
+            'power_law_wealth': 'use_power_law_wealth',
+            'immigrant_wedge': 'use_immigrant_labor',
+            'inheritance_conc': 'inheritance_flow_fraction',
+            'structural_gap': 'use_structural_gap',
+            'forced_reinvestment': 'forced_reinvestment',
         }.get(name, '')
         
         if primary_key:

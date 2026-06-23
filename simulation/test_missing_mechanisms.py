@@ -88,14 +88,15 @@ check('Positive threshold skips', apply_bankruptcy(config_nobk, rng, [], [], [],
 
 # ─── 4. Government Services Productivity ───────────────────────────
 
-print('\n=== 4. Government Services ===')
+print('\\n=== 4. Government Services ===')
 config_gov = {'gov_service_productivity': 0.5, 'gov_service_elasticity': 0.15}
 w_gov = make_workers()
 bal_gov = {w['id']: 50000 for w in w_gov}
 bal_gov['sys'] = 500000000
 bal_gov['trust'] = 0
-result_gov = apply_gov_service_productivity(config_gov, rng, w_gov, [], [], bal_gov, 1, {})
-check('Hourly wage set at step 1', '_base_hourly' in w_gov[0])
+# Need step=13 (12+1 = annual trigger) with positive total_tax
+result_gov = apply_gov_service_productivity(config_gov, rng, w_gov, [], [], bal_gov, 13, {'total_tax': 50000})
+check('Hourly wage set', '_base_hourly' in w_gov[0])
 hourly_after = w_gov[0]['hourly']
 check('Productivity multiplier applied', hourly_after > 20.0)
 
