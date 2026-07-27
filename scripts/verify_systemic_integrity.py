@@ -25,7 +25,8 @@ LOGIC_ASSERTIONS: Dict[str, List[str]] = {
     "11_litigation_asymmetry.md": ["Sortition", "Redundant"],
     "12_jurisdictional_evasion.md": ["Asset-Linked", "Repo-Market"],
     "13_data_leviathan.md": ["Polycentric", "Actuarial Dissent"],
-    "15_class_warfare.md": ["Multi-Compact", "Redistributive", "Exodus"]
+    "15_class_warfare.md": ["Multi-Compact", "Redistributive", "Exodus"],
+    "16_insurer_cascade.md": ["Waterfall", "Parametric", "Retro-Assessment"]
 }
 
 def analyze_file(filepath: str) -> bool:

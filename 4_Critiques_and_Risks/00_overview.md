@@ -34,6 +34,7 @@ The system solves the internal problems of the 20th-century state (bureaucracy, 
 | [13 Data Leviathan](./13_data_leviathan.md) | Algorithmic tyranny |
 | [14 Conflict Matrix](./14_conflict_matrix.md) | Systemic gridlock resolution |
 | [15 Class Warfare](./15_class_warfare.md) | Redistributive collapse in unequal societies |
+| [16 Insurer Cascade](./16_insurer_cascade.md) | Correlated insurer insolvency — who insures the insurers |
 | [07 Mitigations](./07_mitigations.md) | Unified mitigation index |
 
 ---
@@ -55,6 +56,7 @@ The system solves the internal problems of the 20th-century state (bureaucracy, 
 | Capital Exile | High | Medium (Entry Escrows) |
 | Data Leviathan | Very High | Medium (Guild Mutuals + Actuarial Commons) |
 | **Class Warfare (Unequal Societies)** | **Very High** | **Low (Requires exit options for capital; fails in single-compact systems)** |
+| Insurer Cascade | Very High | Medium (Liability Waterfall + parametric Catastrophe Protocol) |
 
 ---
 

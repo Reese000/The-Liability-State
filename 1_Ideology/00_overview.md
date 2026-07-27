@@ -32,6 +32,7 @@ The Liability State represents a **paradigmatic shift** in the social contract: 
 || [Goals and Values](./02_goals_and_values.md) | What the system aims to achieve |
 || [Philosophical Basis](./03_philosophical_basis.md) | Theoretical underpinnings and inspirations |
 || [Constitutional Framework](./04_constitutional_framework.md) | Structure and format for constitutional provisions |
+|| [Case Study: 2008](./05_case_study_2008.md) | The half-formula failure — permissionless action without total responsibility |
 
 ---
 
